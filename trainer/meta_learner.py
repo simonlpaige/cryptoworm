@@ -27,7 +27,7 @@ from typing import Any, Dict, List, Optional
 
 import config
 
-logger = logging.getLogger("cryptobot.trainer.meta_learner")
+logger = logging.getLogger("cryptoworm.trainer.meta_learner")
 
 # ── File paths ─────────────────────────────────────────────────────────────
 META_STATE_FILE = os.path.join(config.BOT_DIR, "trainer", "meta_state.json")

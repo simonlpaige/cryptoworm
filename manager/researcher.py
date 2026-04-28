@@ -24,7 +24,7 @@ from typing import Dict, List, Optional
 
 import config
 
-logger = logging.getLogger("cryptobot.manager.researcher")
+logger = logging.getLogger("cryptoworm.manager.researcher")
 
 RESEARCH_DIR = os.path.join(config.BOT_DIR, "manager", "research")
 FINDINGS_FILE = os.path.join(RESEARCH_DIR, "findings.json")
@@ -538,7 +538,7 @@ def run_full_research(ohlc: list = None) -> dict:
 def format_research_report(report: dict) -> str:
     """Format research as readable text."""
     lines = [
-        f"🔬 CryptoBot Research Report",
+        f"🔬 CryptoWorm Research Report",
         f"Time: {report['timestamp'][:19]}Z",
         f"Modules: {report['modules_run']} | Findings: {report['total_findings']}",
         "",

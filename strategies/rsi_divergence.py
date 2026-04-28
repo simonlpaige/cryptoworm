@@ -17,7 +17,7 @@ from utils.kraken_client import KrakenClient
 from strategies.ema_macd import calc_rsi
 from trainer.param_loader import rsi_div_long_threshold, rsi_div_short_threshold, rsi_div_sl, rsi_div_tp
 
-logger = logging.getLogger("cryptobot.rsi_div")
+logger = logging.getLogger("cryptoworm.rsi_div")
 
 
 def find_swing_lows(prices: list, window: int = 5) -> list:

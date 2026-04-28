@@ -22,7 +22,7 @@ from typing import Dict, List, Optional
 
 import config
 
-logger = logging.getLogger("cryptobot.manager.health")
+logger = logging.getLogger("cryptoworm.manager.health")
 
 STATE_FILE = config.STATE_FILE
 TRAINING_STATE = os.path.join(config.BOT_DIR, "trainer", "training_state.json")
@@ -281,7 +281,7 @@ def format_health_report(report: dict) -> str:
     lines = []
     status_emoji = {"healthy": "✅", "warning": "⚠️", "error": "❌", "critical": "🚨", "info": "ℹ️", "unknown": "❓"}
 
-    lines.append(f"{status_emoji.get(report['overall'], '❓')} CryptoBot Health: {report['overall'].upper()}")
+    lines.append(f"{status_emoji.get(report['overall'], '❓')} CryptoWorm Health: {report['overall'].upper()}")
     lines.append(f"Checked: {report['timestamp'][:19]}Z")
     lines.append("")
 

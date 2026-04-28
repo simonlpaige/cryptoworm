@@ -32,7 +32,7 @@ import requests
 
 import config
 
-logger = logging.getLogger("cryptobot.backtester")
+logger = logging.getLogger("cryptoworm.backtester")
 
 
 # ── Historical data fetching ────────────────────────────────────────────
@@ -1158,6 +1158,102 @@ def run_political_correlation_analysis(candles: list) -> dict:
     return summary
 
 
+# ── Walk-forward analysis ───────────────────────────────────────────────
+
+def walk_forward_backtest(ohlc: list, strategy_fn, window_weeks: Optional[int] = None,
+                          min_periods: Optional[int] = None) -> dict:
+    """Walk-forward validation: train on the first half of each window,
+    test on the second.
+
+    Why bother? Because a single backtest over six months tells you what
+    a strategy did, not what it would have done if you'd been adapting
+    it. We slice the data into rolling windows (default two weeks each)
+    and for every window we fit on the first half and grade on the
+    second. A strategy that wins consistently across windows is a real
+    edge. A strategy that wins only on the full history but loses on
+    most windows is curve-fit.
+
+    strategy_fn(train_ohlc, test_ohlc) -> dict with at minimum:
+        {'pnl': float, 'trades': int, 'win_rate': float}
+
+    Returns:
+        {
+          'windows': [per-window result dicts],
+          'aggregate': {
+            'total_pnl', 'avg_pnl', 'win_windows', 'loss_windows',
+            'avg_win_rate', 'periods_tested',
+          },
+          'promoted': bool,
+          'reason': str,
+        }
+    """
+    window_weeks = window_weeks if window_weeks is not None else getattr(
+        config, "WALKFORWARD_WINDOW_WEEKS", 2
+    )
+    min_periods = min_periods if min_periods is not None else getattr(
+        config, "WALKFORWARD_MIN_PERIODS", 3
+    )
+
+    if not ohlc:
+        return {"windows": [], "aggregate": {}, "promoted": False,
+                "reason": "no OHLC data"}
+
+    # Hourly candles assumed; window length in candles
+    candles_per_week = 24 * 7
+    window_size = window_weeks * candles_per_week
+    if window_size < 4 or len(ohlc) < window_size * min_periods:
+        return {"windows": [], "aggregate": {}, "promoted": False,
+                "reason": f"need at least {window_size * min_periods} candles, got {len(ohlc)}"}
+
+    windows = []
+    for start in range(0, len(ohlc) - window_size + 1, window_size):
+        window = ohlc[start:start + window_size]
+        half = len(window) // 2
+        train = window[:half]
+        test = window[half:]
+        try:
+            result = strategy_fn(train, test) or {}
+        except Exception as e:
+            logger.warning("walk_forward window %d failed: %s", start, e)
+            result = {"pnl": 0.0, "trades": 0, "win_rate": 0.0, "error": str(e)}
+        result.setdefault("pnl", 0.0)
+        result.setdefault("trades", 0)
+        result.setdefault("win_rate", 0.0)
+        result["window_start_idx"] = start
+        result["window_end_idx"] = start + window_size
+        windows.append(result)
+
+    n = len(windows)
+    if n == 0:
+        return {"windows": [], "aggregate": {}, "promoted": False,
+                "reason": "no completed windows"}
+
+    total_pnl = sum(w["pnl"] for w in windows)
+    win_windows = sum(1 for w in windows if w["pnl"] > 0)
+    loss_windows = sum(1 for w in windows if w["pnl"] < 0)
+    avg_pnl = total_pnl / n
+    avg_wr = sum(w["win_rate"] for w in windows) / n
+
+    promoted = (n >= min_periods) and (win_windows > loss_windows) and (total_pnl > 0)
+    reason = "promoted" if promoted else (
+        f"only {win_windows}/{n} winning windows (need majority and positive total)"
+    )
+
+    return {
+        "windows": windows,
+        "aggregate": {
+            "total_pnl": total_pnl,
+            "avg_pnl": avg_pnl,
+            "win_windows": win_windows,
+            "loss_windows": loss_windows,
+            "avg_win_rate": avg_wr,
+            "periods_tested": n,
+        },
+        "promoted": promoted,
+        "reason": reason,
+    }
+
+
 # ── Main entry point ────────────────────────────────────────────────────
 
 def run_backtest():
@@ -1170,7 +1266,7 @@ def run_backtest():
     )
 
     logger.info("=" * 60)
-    logger.info("CryptoBot Backtesting Engine")
+    logger.info("CryptoWorm Backtesting Engine")
     logger.info("=" * 60)
 
     # Fetch historical data

@@ -1,4 +1,4 @@
-# CryptoBot Heartbeat Checklist
+# CryptoWorm Heartbeat Checklist
 
 ## CEO (every 4 hours)
 - [ ] Check Analyst's latest signal report

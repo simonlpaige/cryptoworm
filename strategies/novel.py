@@ -1,5 +1,5 @@
 """
-Novel Pattern Discovery — uses local Gemma4 LLM to hypothesize
+Novel Pattern Discovery - uses local Gemma4 LLM to hypothesize
 multi-parameter correlations, then validates them with backtesting.
 
 Flow:
@@ -7,8 +7,14 @@ Flow:
   2. Compute ~30 technical indicators and cross-correlations
   3. Send correlation matrix + anomalies to Gemma4
   4. Gemma4 proposes tradeable hypotheses (entry/exit rules)
-  5. Backtest each hypothesis against 6 months of data
-  6. Winners (PF > 1.5, WR > 55%, Sharpe > 1.0) get promoted
+  5. validate_proposal() backtests each one out-of-sample
+  6. Only proposals that clear PF/WR/Sharpe thresholds get saved
+
+The LLM is a hypothesis generator only - it never decides what trades.
+A proposal that survives validate_proposal() with profit_factor >=
+NOVEL_MIN_PROFIT_FACTOR, win_rate >= NOVEL_MIN_WIN_RATE, sharpe >=
+NOVEL_MIN_SHARPE earns promotion. Everything else gets archived in a
+'rejected_proposals' list so we can audit why the LLM was wrong.
 
 This runs as a weekly research job, NOT real-time trading.
 """
@@ -20,7 +26,9 @@ import http.client
 from datetime import datetime
 from typing import Optional
 
-logger = logging.getLogger("cryptobot.novel")
+import config
+
+logger = logging.getLogger("cryptoworm.novel")
 
 OLLAMA_HOST = "localhost"
 OLLAMA_PORT = 11434
@@ -186,6 +194,153 @@ Respond in JSON only:
         return []
 
 
+def validate_proposal(proposal: dict, ohlc: list) -> dict:
+    """Backtest a Gemma hypothesis against out-of-sample data.
+
+    The LLM hands us a rough rule like "buy when rsi_14 < 30, sell when
+    rsi_14 > 70, TP=3%, SL=1.5%". We split the OHLC into a first half
+    used to compute the indicator series and a second half used as
+    out-of-sample validation. Trades are simulated on the second half
+    only - this is how we keep the LLM honest. Anything tested on data
+    it was conditioned on doesn't count.
+
+    Returns the proposal dict with these added fields:
+      validated:           True/False
+      profit_factor:       gross profit / gross loss
+      win_rate:            winners / total trades
+      sharpe:              annualized Sharpe of trade returns
+      validation_trades:   number of trades simulated
+      validation_months:   length of the out-of-sample window
+      reject_reason:       why it failed (only when validated=False)
+    """
+    out = dict(proposal)
+    out.update({
+        "validated": False,
+        "profit_factor": 0.0,
+        "win_rate": 0.0,
+        "sharpe": 0.0,
+        "validation_trades": 0,
+        "validation_months": 0.0,
+        "reject_reason": "",
+    })
+
+    indicator_name = proposal.get("key_indicator")
+    if not indicator_name:
+        out["reject_reason"] = "no key_indicator field"
+        return out
+
+    try:
+        threshold_buy = float(proposal.get("threshold_buy"))
+        threshold_sell = float(proposal.get("threshold_sell"))
+        tp_pct = float(proposal.get("exit_tp_pct", 3.0)) / 100.0
+        sl_pct = float(proposal.get("exit_sl_pct", 1.5)) / 100.0
+    except (TypeError, ValueError):
+        out["reject_reason"] = "missing or invalid thresholds / TP / SL"
+        return out
+
+    if not ohlc or len(ohlc) < 200:
+        out["reject_reason"] = "insufficient OHLC for validation"
+        return out
+
+    indicators = compute_indicators(ohlc)
+    series = indicators.get(indicator_name)
+    if not series or len(series) != len(ohlc):
+        out["reject_reason"] = f"indicator '{indicator_name}' not available"
+        return out
+
+    closes = [c["close"] for c in ohlc]
+    # Out-of-sample = second half. The first half is treated as the
+    # period the LLM (transitively) saw via the correlation summary.
+    split = len(ohlc) // 2
+    test_closes = closes[split:]
+    test_series = series[split:]
+
+    trades = []  # list of pnl_pct
+    open_side = None  # 'buy' or 'sell'
+    entry_price = None
+
+    for i, (px, val) in enumerate(zip(test_closes, test_series)):
+        if val is None:
+            continue
+        if open_side is None:
+            if val <= threshold_buy:
+                open_side = "buy"
+                entry_price = px
+            elif val >= threshold_sell:
+                open_side = "sell"
+                entry_price = px
+            continue
+
+        # Position open: check TP/SL
+        change = (px - entry_price) / entry_price
+        if open_side == "buy":
+            if change >= tp_pct:
+                trades.append(change)
+                open_side = None
+            elif change <= -sl_pct:
+                trades.append(change)
+                open_side = None
+        else:  # sell
+            if -change >= tp_pct:
+                trades.append(-change)
+                open_side = None
+            elif -change <= -sl_pct:
+                trades.append(-change)
+                open_side = None
+
+    n = len(trades)
+    out["validation_trades"] = n
+    # Hourly candles - estimate validation window in months
+    out["validation_months"] = round(len(test_closes) / (24 * 30), 2)
+
+    min_months = float(getattr(config, "NOVEL_MIN_BACKTEST_MONTHS", 6))
+    if out["validation_months"] < min_months:
+        out["reject_reason"] = (
+            f"validation window {out['validation_months']:.1f}mo < "
+            f"NOVEL_MIN_BACKTEST_MONTHS={min_months}"
+        )
+        return out
+
+    if n < 10:
+        out["reject_reason"] = f"only {n} trades in validation window"
+        return out
+
+    wins = [t for t in trades if t > 0]
+    losses = [t for t in trades if t <= 0]
+    gross_profit = sum(wins)
+    gross_loss = abs(sum(losses))
+    pf = gross_profit / gross_loss if gross_loss > 0 else (float("inf") if gross_profit > 0 else 0.0)
+    wr = len(wins) / n
+
+    mean = sum(trades) / n
+    var = sum((t - mean) ** 2 for t in trades) / (n - 1) if n > 1 else 0.0
+    std = math.sqrt(var) if var > 0 else 0.0
+    # Treat each trade as a sample; annualize roughly assuming ~50 trades/yr for
+    # the typical proposal. This is a rough Sharpe, not a tradeable metric.
+    sharpe = (mean / std * math.sqrt(50)) if std > 0 else 0.0
+
+    out["profit_factor"] = round(pf if pf != float("inf") else 999.0, 3)
+    out["win_rate"] = round(wr, 3)
+    out["sharpe"] = round(sharpe, 3)
+
+    min_pf = float(getattr(config, "NOVEL_MIN_PROFIT_FACTOR", 1.5))
+    min_wr = float(getattr(config, "NOVEL_MIN_WIN_RATE", 0.55))
+    min_sharpe = float(getattr(config, "NOVEL_MIN_SHARPE", 1.0))
+
+    if pf < min_pf:
+        out["reject_reason"] = f"profit_factor {pf:.2f} < {min_pf}"
+        return out
+    if wr < min_wr:
+        out["reject_reason"] = f"win_rate {wr:.2f} < {min_wr}"
+        return out
+    if sharpe < min_sharpe:
+        out["reject_reason"] = f"sharpe {sharpe:.2f} < {min_sharpe}"
+        return out
+
+    out["validated"] = True
+    return out
+
+
 def run_discovery(kraken_client, regime_detector=None) -> dict:
     """Main entry point: collect data, compute correlations, ask Gemma, return proposals."""
     logger.info("Starting novel pattern discovery...")
@@ -221,22 +376,48 @@ def run_discovery(kraken_client, regime_detector=None) -> dict:
 
     # Query Gemma for hypotheses
     logger.info("Querying Gemma4 for novel strategy hypotheses...")
-    proposals = query_gemma(correlations, market_context)
+    raw_proposals = query_gemma(correlations, market_context)
+
+    # Validation gate: backtest each hypothesis on out-of-sample data
+    # before saving. The LLM is a generator, not an oracle.
+    promoted = []
+    rejected = []
+    for prop in raw_proposals:
+        validated = validate_proposal(prop, ohlc)
+        if validated["validated"]:
+            promoted.append(validated)
+            logger.info(
+                "PROMOTED %s: PF=%.2f WR=%.2f Sharpe=%.2f trades=%d",
+                validated.get("name", "<unnamed>"),
+                validated["profit_factor"], validated["win_rate"],
+                validated["sharpe"], validated["validation_trades"],
+            )
+        else:
+            rejected.append(validated)
+            logger.info(
+                "REJECTED %s: %s",
+                validated.get("name", "<unnamed>"),
+                validated["reject_reason"],
+            )
+
+    logger.info("Validation: %d promoted, %d rejected (of %d raw proposals)",
+                len(promoted), len(rejected), len(raw_proposals))
 
     result = {
         "status": "ok",
         "timestamp": datetime.utcnow().isoformat(),
         "candles_analyzed": len(ohlc),
         "top_correlations": correlations[:10],
-        "proposals": proposals,
-        "market_context": market_context
+        "proposals": promoted,
+        "rejected_proposals": rejected,
+        "market_context": market_context,
     }
 
     # Save results
     try:
         with open(RESULTS_FILE, "w") as f:
             json.dump(result, f, indent=2)
-        logger.info("Saved %d proposals to %s", len(proposals), RESULTS_FILE)
+        logger.info("Saved %d validated proposals to %s", len(promoted), RESULTS_FILE)
     except Exception as e:
         logger.error("Failed to save proposals: %s", e)
 

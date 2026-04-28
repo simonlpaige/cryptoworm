@@ -1,4 +1,4 @@
-# CryptoBot Self-Improvement Engine
+# CryptoWorm Self-Improvement Engine
 
 ## How It Works
 

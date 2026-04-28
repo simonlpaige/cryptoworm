@@ -22,7 +22,7 @@ from typing import Optional
 
 import requests
 
-logger = logging.getLogger("cryptobot.fed")
+logger = logging.getLogger("cryptoworm.fed")
 
 # FRED API base (no key required for basic access)
 FRED_BASE_URL = "https://api.stlouisfed.org/fred"

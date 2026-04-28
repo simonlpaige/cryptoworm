@@ -18,7 +18,7 @@ from utils.kraken_client import KrakenClient
 from strategies.ema_macd import calc_rsi, calc_adx
 from trainer.param_loader import bb_period, bb_std, bb_rsi_oversold, bb_rsi_overbought, bb_adx_max
 
-logger = logging.getLogger("cryptobot.bollinger")
+logger = logging.getLogger("cryptoworm.bollinger")
 
 
 def calc_bollinger(closes: list, period: int = 20, num_std: float = 2.0) -> Optional[dict]:

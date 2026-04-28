@@ -30,7 +30,7 @@ from trainer.researcher import build_market_context, RESEARCH_PARAMS
 from trainer.tuner import generate_adjustments, apply_adjustments, load_overrides
 from utils.kraken_client import KrakenClient
 
-logger = logging.getLogger("cryptobot.trainer.engine")
+logger = logging.getLogger("cryptoworm.trainer.engine")
 
 TRAINING_STATE_FILE = os.path.join(config.BOT_DIR, "trainer", "training_state.json")
 TRAINING_REPORT_DIR = os.path.join(config.BOT_DIR, "trainer", "reports")

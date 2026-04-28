@@ -1,4 +1,4 @@
-# CryptoBot — Trading Strategies
+# CryptoWorm — Trading Strategies
 
 ## Strategy 1: Grid Bot (Passive — Phase 1)
 - **Instrument:** BTC/USDT

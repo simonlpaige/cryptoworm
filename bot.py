@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-CryptoBot — Paper Trading Bot
+CryptoWorm - Paper Trading Bot
 ==============================
 Connects to Kraken for real-time BTC/USD prices.
 Runs five strategies:
@@ -10,7 +10,7 @@ Runs five strategies:
   4. Bollinger Mean Reversion (ranging markets, ADX<30)
   5. RSI Divergence (reversal catching, 4h timeframe)
 Simulates trades with a virtual $500 balance.
-NO real orders are ever placed.
+NO real orders are ever placed (EXCHANGE_MODE='paper').
 
 Usage:
     pip install -r requirements.txt
@@ -48,6 +48,9 @@ import config
 from utils.logger import setup_logging, log_daily_summary
 from utils.kraken_client import KrakenClient
 from utils.risk_manager import RiskManager
+from utils.exchange_manager import ExchangeManager
+from utils.position_sizer import PositionSizer
+from utils.leverage_manager import LeverageManager
 from strategies.grid import GridBot
 from strategies.sentiment import SentimentSwing
 from strategies.ema_macd import EmaMacdMomentum
@@ -63,14 +66,14 @@ from trainer.engine import run_cycle, load_training_state, save_training_state
 from manager.health import full_health_check, format_health_report
 from manager.researcher import run_full_research, format_research_report
 
-logger = logging.getLogger("cryptobot.main")
+logger = logging.getLogger("cryptoworm.main")
 
 # ── Graceful shutdown ────────────────────────────────────────────────────
 _running = True
 
 def _shutdown(sig, frame):
     global _running
-    logger.info("Shutdown signal received — stopping bot...")
+    logger.info("Shutdown signal received - stopping bot...")
     _running = False
 
 signal.signal(signal.SIGINT, _shutdown)
@@ -80,17 +83,36 @@ signal.signal(signal.SIGTERM, _shutdown)
 def main():
     setup_logging()
     logger.info("=" * 60)
-    logger.info("CryptoBot Paper Trading Bot starting")
+    logger.info("CryptoWorm Paper Trading Bot starting")
     logger.info("  Balance: $%.2f (virtual)", config.INITIAL_BALANCE)
     logger.info("  Pair: %s", config.PAIR_DISPLAY)
     logger.info("  Interval: %ds", config.CHECK_INTERVAL_SECONDS)
-    logger.info("  Mode: PAPER TRADING ONLY — no real orders")
+    logger.info("  Exchange mode: %s (%s)",
+                getattr(config, "EXCHANGE_MODE", "paper").upper(),
+                getattr(config, "EXCHANGE_NAME", "kraken"))
+    logger.info("  Portfolio: HODL=%.0f%% / GRID=%.0f%% / CARRY=%.0f%%",
+                getattr(config, "HODL_ALLOCATION_PCT", 50.0),
+                getattr(config, "GRID_POOL_PCT", 35.0),
+                getattr(config, "CARRY_POOL_PCT", 15.0))
+    logger.info("  Max leverage: %.1fx | Daily trailing DD pause: %.1f%%",
+                getattr(config, "MAX_LEVERAGE", 3.0),
+                getattr(config, "DAILY_TRAILING_DRAWDOWN_PCT", 15.0))
     logger.info("=" * 60)
 
     # Initialize components
     kraken = KrakenClient()
     risk = RiskManager()
     regime_detector = RegimeDetector(kraken)
+
+    # New sizing/leverage/exchange routing layer (Stage 1).
+    # PositionSizer and LeverageManager are constructed here so the main
+    # loop can reach for them when it decides bet size; ExchangeManager
+    # is the single chokepoint for any future real-order routing.
+    position_sizer = PositionSizer()
+    leverage_manager = LeverageManager()
+    exchange = ExchangeManager(risk_manager=risk)
+    logger.info("Risk stack active: PositionSizer + LeverageManager(max=%.1fx) + ExchangeManager(mode=%s)",
+                leverage_manager.max_leverage, exchange.mode)
     grid = GridBot(kraken, risk)
     sentiment = SentimentSwing(kraken, risk)
     ema_macd = EmaMacdMomentum(kraken, risk) if getattr(config, "ENABLE_EMA_MACD", True) else None

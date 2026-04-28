@@ -1,6 +1,6 @@
 """
-CryptoBot Configuration
-Paper trading bot — NO real orders ever placed.
+CryptoWorm Configuration
+Paper trading bot - NO real orders ever placed unless EXCHANGE_MODE is flipped.
 """
 import os
 
@@ -18,12 +18,13 @@ INITIAL_BALANCE = 500.0          # USD virtual balance
 PAIR = "XXBTZUSD"                # Kraken pair name for BTC/USD
 PAIR_DISPLAY = "BTC/USD"
 
-# ── Portfolio Structure (80/20 HODL/Grid) ────────────────────────────────
-HODL_ALLOCATION_PCT = 80.0       # 80% ($400) buy-and-hold BTC — the real moneymaker
-GRID_POOL_PCT = 20.0             # 20% ($100) active grid trading — extract value from chop
-# Backtest showed HODL returned 8,022% over 9 years. Grid's edge is defensive
-# (saves money in crashes) but can't compete with HODL in bull runs.
-# This split captures both: growth from HODL, income from Grid.
+# Portfolio Structure - Stage 1: Yield Stack (conservative entry)
+# Analysis doc: _archive/crypto-2026/ANALYSIS-2026-04-27.md
+HODL_ALLOCATION_PCT = 50.0       # 50% buy-and-hold BTC
+GRID_POOL_PCT = 35.0             # 35% spot grid (BTC/USD + ETH/USD)
+CARRY_POOL_PCT = 15.0            # 15% funding rate carry trade
+# Stage 2 targets (unlock when funding carry is stable and tested):
+# HODL=25%, GRID=25%, CARRY(momentum+mean-reversion)=50%
 
 # ── Risk Rules ──────────────────────────────────────────────────────────
 MAX_RISK_PER_TRADE_PCT = 20.0    # 20% of GRID POOL per trade ($20 on $100 pool)
@@ -90,3 +91,22 @@ BOT_DIR = os.path.dirname(os.path.abspath(__file__))
 TRADE_LOG_PATH = os.path.join(BOT_DIR, "TRADE_LOG.md")
 STATE_FILE = os.path.join(BOT_DIR, "bot_state.json")
 LOG_FILE = os.path.join(BOT_DIR, "bot.log")
+
+# Leverage & Risk Management
+MAX_LEVERAGE = 3.0               # Hard cap 3x in Stage 1
+DAILY_TRAILING_DRAWDOWN_PCT = 15.0  # Close all + pause if portfolio drops 15% from 30-day high
+KELLY_ATR_FRACTION = 0.25        # Kelly fraction for volatility-based sizing (conservative)
+
+# Exchange Mode
+EXCHANGE_MODE = 'paper'          # 'paper' | 'testnet' | 'live' - NEVER change to live without explicit confirmation
+EXCHANGE_NAME = 'kraken'         # 'kraken' | 'binance' | 'bybit'
+
+# Novel strategy validation thresholds (Flaw #3 fix)
+NOVEL_MIN_PROFIT_FACTOR = 1.5    # Minimum profit factor to promote a Gemma hypothesis
+NOVEL_MIN_WIN_RATE = 0.55        # Minimum win rate
+NOVEL_MIN_SHARPE = 1.0           # Minimum Sharpe ratio
+NOVEL_MIN_BACKTEST_MONTHS = 6    # Minimum out-of-sample backtest period
+
+# Walk-forward validation
+WALKFORWARD_WINDOW_WEEKS = 2     # Training/validation split size
+WALKFORWARD_MIN_PERIODS = 3      # Minimum periods before promoting a strategy

@@ -10,7 +10,7 @@ import os
 
 import config
 
-logger = logging.getLogger("cryptobot.trainer.param_loader")
+logger = logging.getLogger("cryptoworm.trainer.param_loader")
 
 OVERRIDES_FILE = os.path.join(config.BOT_DIR, "trainer", "param_overrides.json")
 

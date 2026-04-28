@@ -16,7 +16,7 @@ from typing import Optional, Dict, Any, List, Tuple
 
 import numpy as np
 
-logger = logging.getLogger("cryptobot.ml_signal")
+logger = logging.getLogger("cryptoworm.ml_signal")
 
 # Lazy-load xgboost to avoid import-time crash if not installed
 _xgb = None

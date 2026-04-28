@@ -1,4 +1,4 @@
-# Simon's Tasks — CryptoBot Setup
+# Simon's Tasks — CryptoWorm Setup
 
 ## Accounts to Open (in order)
 

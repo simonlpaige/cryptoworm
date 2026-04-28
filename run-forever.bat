@@ -1,12 +1,12 @@
 @echo off
-:: CryptoBot 24/7 Runner — restarts on crash
+:: CryptoWorm 24/7 Runner - restarts on crash
 :: Launched via Task Scheduler at system startup
 
-cd /d C:\Users\simon\.openclaw\workspace\crypto-bot
+cd /d C:\Users\simon\code\cryptoworm
 
 :loop
-echo [%date% %time%] Starting CryptoBot...
+echo [%date% %time%] Starting CryptoWorm...
 py -3 bot.py
-echo [%date% %time%] CryptoBot exited with code %errorlevel%. Restarting in 30s...
+echo [%date% %time%] CryptoWorm exited with code %errorlevel%. Restarting in 30s...
 timeout /t 30 /nobreak >nul
 goto loop

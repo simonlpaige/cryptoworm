@@ -22,7 +22,7 @@ from datetime import datetime, timezone
 from itertools import combinations
 from typing import Optional
 
-logger = logging.getLogger("cryptobot.trainer.discovery")
+logger = logging.getLogger("cryptoworm.trainer.discovery")
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 _HERE = os.path.dirname(os.path.abspath(__file__))

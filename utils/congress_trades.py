@@ -24,7 +24,7 @@ from xml.etree import ElementTree
 
 import requests
 
-logger = logging.getLogger("cryptobot.congress")
+logger = logging.getLogger("cryptoworm.congress")
 
 # Crypto-adjacent tickers to track
 CRYPTO_TICKERS = {"COIN", "MSTR", "MARA", "RIOT", "GBTC", "IBIT", "BITB", "BITO", "CLSK", "HUT"}
@@ -52,7 +52,7 @@ class CongressTradesProvider:
 
         try:
             resp = requests.get(url, timeout=30, headers={
-                "User-Agent": "CryptoBot/1.0 (research)"
+                "User-Agent": "CryptoWorm/1.0 (research)"
             })
             if resp.status_code != 200:
                 logger.debug("House disclosures returned %d", resp.status_code)
@@ -82,7 +82,7 @@ class CongressTradesProvider:
 
         try:
             resp = requests.get(url, timeout=30, headers={
-                "User-Agent": "CryptoBot/1.0 (research)"
+                "User-Agent": "CryptoWorm/1.0 (research)"
             })
             if resp.status_code != 200:
                 logger.debug("Senate EFDS returned %d", resp.status_code)

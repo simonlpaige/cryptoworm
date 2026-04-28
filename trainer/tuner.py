@@ -17,7 +17,7 @@ from typing import Dict, List, Optional, Tuple
 import config
 from trainer.researcher import RESEARCH_PARAMS
 
-logger = logging.getLogger("cryptobot.trainer.tuner")
+logger = logging.getLogger("cryptoworm.trainer.tuner")
 
 TUNING_LOG = os.path.join(config.BOT_DIR, "trainer", "tuning_log.json")
 OVERRIDES_FILE = os.path.join(config.BOT_DIR, "trainer", "param_overrides.json")

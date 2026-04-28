@@ -7,12 +7,12 @@ from datetime import datetime
 
 import config
 
-logger = logging.getLogger("cryptobot.logger")
+logger = logging.getLogger("cryptoworm.logger")
 
 
 def setup_logging():
     """Configure root logger for the bot."""
-    root = logging.getLogger("cryptobot")
+    root = logging.getLogger("cryptoworm")
     root.setLevel(logging.INFO)
 
     fmt = logging.Formatter("%(asctime)s [%(name)s] %(levelname)s: %(message)s",
@@ -109,7 +109,7 @@ def log_daily_summary(summary: dict):
 
 
 def _init_trade_log(path: str):
-    content = """# CryptoBot — Trade Log
+    content = """# CryptoWorm - Trade Log
 
 ## Format
 | Date | Time | Pair | Side | Price | Size | Strategy | Stop-Loss | Take-Profit | Result | Notes |

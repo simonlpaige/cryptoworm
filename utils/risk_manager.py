@@ -17,7 +17,7 @@ except ImportError:
 import config
 from utils.logger import log_trade_to_md
 
-logger = logging.getLogger("cryptobot.risk")
+logger = logging.getLogger("cryptoworm.risk")
 
 # Maximum age for open positions before forced close (hours)
 MAX_POSITION_AGE_HOURS = 168  # 7 days default

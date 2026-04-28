@@ -31,7 +31,7 @@ from utils.congress_trades import CongressTradesProvider
 from utils.fed_signals import FedSignalProvider
 from utils.sec_filings import SecFilingsProvider
 
-logger = logging.getLogger("cryptobot.political")
+logger = logging.getLogger("cryptoworm.political")
 
 # ── Signal scoring keywords ──────────────────────────────────────────────
 
@@ -104,7 +104,7 @@ class TrumpSignalProvider:
             resp = requests.get(
                 "https://truthsocial.com/@realDonaldTrump.rss",
                 timeout=15,
-                headers={"User-Agent": "CryptoBot/1.0 (research)"},
+                headers={"User-Agent": "CryptoWorm/1.0 (research)"},
             )
             if resp.status_code == 200:
                 posts.extend(self._parse_rss(resp.text))

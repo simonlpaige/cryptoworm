@@ -17,7 +17,7 @@ from datetime import datetime
 import config
 from manager.health import full_health_check, format_health_report
 
-logger = logging.getLogger("cryptobot.manager.supervisor")
+logger = logging.getLogger("cryptoworm.manager.supervisor")
 
 HEALTH_INTERVAL = 900  # health check every 15 min
 MAX_RESTARTS_PER_HOUR = 5
@@ -69,7 +69,7 @@ def run_bot_supervised():
     last_health_check = 0
 
     logger.info("=" * 60)
-    logger.info("CryptoBot Supervisor starting")
+    logger.info("CryptoWorm Supervisor starting")
     logger.info("  Bot script: %s", os.path.join(config.BOT_DIR, "bot.py"))
     logger.info("  Health check interval: %ds", HEALTH_INTERVAL)
     logger.info("=" * 60)

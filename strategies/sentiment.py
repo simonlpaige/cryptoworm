@@ -14,7 +14,7 @@ import config
 from utils.risk_manager import RiskManager
 from utils.kraken_client import KrakenClient
 from trainer.param_loader import fear_threshold, greed_threshold, sentiment_tp, sentiment_sl
-logger = logging.getLogger("cryptobot.sentiment")
+logger = logging.getLogger("cryptoworm.sentiment")
 
 
 class SentimentSwing:

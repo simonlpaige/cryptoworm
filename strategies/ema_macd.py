@@ -14,7 +14,7 @@ import config
 from utils.risk_manager import RiskManager
 from utils.kraken_client import KrakenClient
 from trainer.param_loader import ema_adx_threshold, ema_rsi_long_range, ema_rsi_short_range, ema_sl, ema_tp
-logger = logging.getLogger("cryptobot.ema_macd")
+logger = logging.getLogger("cryptoworm.ema_macd")
 
 
 def ema(prices: list, period: int) -> list:

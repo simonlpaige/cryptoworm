@@ -18,7 +18,7 @@ from pykrakenapi import KrakenAPI
 
 import config
 
-logger = logging.getLogger("cryptobot.kraken")
+logger = logging.getLogger("cryptoworm.kraken")
 
 # Auto-learning: track failure patterns for diagnosis
 _failure_counts: Dict[str, int] = {}

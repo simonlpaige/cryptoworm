@@ -14,7 +14,7 @@ import requests
 
 from strategies.ema_macd import calc_rsi, calc_adx, ema
 
-logger = logging.getLogger("cryptobot.features")
+logger = logging.getLogger("cryptoworm.features")
 
 # Fear & Greed cache (shared across calls, max once per hour)
 _fng_cache: Optional[Dict[str, Any]] = None

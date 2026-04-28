@@ -13,7 +13,7 @@ from typing import Optional, List
 import config
 from utils.risk_manager import RiskManager
 from utils.kraken_client import KrakenClient
-logger = logging.getLogger("cryptobot.grid")
+logger = logging.getLogger("cryptoworm.grid")
 
 # Baseline daily volatility for BTC (typical ~2%)
 _BASELINE_VOL = 0.02

@@ -1,4 +1,4 @@
-# CryptoBot — Trade Log
+# CryptoWorm — Trade Log
 
 ## Format
 | Date | Time | Pair | Side | Price | Size | Strategy | Stop-Loss | Take-Profit | Result | Notes |

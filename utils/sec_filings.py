@@ -20,7 +20,7 @@ from typing import Optional
 
 import requests
 
-logger = logging.getLogger("cryptobot.sec")
+logger = logging.getLogger("cryptoworm.sec")
 
 # Major institutions to track for crypto/Bitcoin holdings
 TRACKED_INSTITUTIONS = {
@@ -92,7 +92,7 @@ class SecFilingsProvider:
         filings = []
         try:
             resp = requests.get(url, params=params, timeout=30, headers={
-                "User-Agent": "CryptoBot/1.0 research@example.com",
+                "User-Agent": "CryptoWorm/1.0 research@example.com",
                 "Accept": "application/json",
             })
 

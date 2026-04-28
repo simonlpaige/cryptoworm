@@ -1,4 +1,4 @@
-# CryptoBot — Agent Structure
+# CryptoWorm — Agent Structure
 
 ## Organization Chart
 
@@ -68,7 +68,7 @@ Simon (Owner)
   - Sentinel has VETO POWER over any trade
 
 ## Auto-Learning Rules
-Apply closed-loop learning to all CryptoBot operations:
+Apply closed-loop learning to all CryptoWorm operations:
 
 ### Detect → Diagnose → Encode → Verify
 1. **API failures** (SSL, timeout, rate limit): The Kraken client now has exponential backoff + session rebuild. If a new failure pattern emerges, encode it into `kraken_client.py` retry logic, don't just log and ignore.
@@ -87,7 +87,7 @@ The training engine follows GOAP principles:
 
 ### Model Tiering
 - The bot runs as a Python process, not an LLM agent. No model cost.
-- If CryptoBot agents are ever rebuilt as LLM agents, use: Gemma4 for monitoring/execution, Sonnet for analysis, Opus only for strategic decisions.
+- If CryptoWorm agents are ever rebuilt as LLM agents, use: Gemma4 for monitoring/execution, Sonnet for analysis, Opus only for strategic decisions.
 
 ## Security Rules
 1. No agent can withdraw funds - only trade

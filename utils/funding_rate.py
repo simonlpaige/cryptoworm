@@ -12,7 +12,7 @@ from collections import deque
 
 import requests
 
-logger = logging.getLogger("cryptobot.funding_rate")
+logger = logging.getLogger("cryptoworm.funding_rate")
 
 # Funding rate history: (timestamp, rate) tuples
 _MAX_HISTORY = 21 * 3  # 7 days * 3 funding events per day

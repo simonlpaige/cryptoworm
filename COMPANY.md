@@ -1,4 +1,4 @@
-# CryptoBot — AI Crypto Trading Organization
+# CryptoWorm — AI Crypto Trading Organization
 
 ## Mission
 Build an autonomous AI trading system that grows a $500 Bitcoin account through research-driven, risk-managed strategies. Start with paper trading and research. Graduate to live trading only after consistent simulated performance.

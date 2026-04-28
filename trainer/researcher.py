@@ -19,7 +19,7 @@ from datetime import datetime
 
 import config
 
-logger = logging.getLogger("cryptobot.trainer.researcher")
+logger = logging.getLogger("cryptoworm.trainer.researcher")
 
 
 def fetch_fear_greed() -> Optional[dict]:

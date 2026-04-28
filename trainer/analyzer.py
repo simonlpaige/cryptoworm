@@ -10,7 +10,7 @@ from typing import Dict, List, Optional
 
 import config
 
-logger = logging.getLogger("cryptobot.trainer.analyzer")
+logger = logging.getLogger("cryptoworm.trainer.analyzer")
 
 
 def load_state() -> dict:

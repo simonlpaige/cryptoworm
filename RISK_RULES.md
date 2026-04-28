@@ -1,4 +1,4 @@
-# CryptoBot - Risk Management Rules
+# CryptoWorm - Risk Management Rules
 
 ## PORTFOLIO STRUCTURE (80/20)
 - **HODL (80%):** $400 in BTC, buy and hold. Never traded by the bot.

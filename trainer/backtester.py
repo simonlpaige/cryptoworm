@@ -680,7 +680,7 @@ def run_strategy_backtest(strategy_name: str, candles: list, initial_balance: fl
     from strategies.bollinger import BollingerMeanReversion
     from strategies.rsi_divergence import RsiDivergence
     from strategies.political import PoliticalSignals
-    from strategies.novel import TariffWhiplashStrategy, CongressionalFrontRunStrategy
+    # TariffWhiplashStrategy and CongressionalFrontRunStrategy not yet implemented
 
     # Monkey-patch sentiment to use our proxy if running sentiment strategy
     sentiment_provider = None
@@ -717,10 +717,8 @@ def run_strategy_backtest(strategy_name: str, candles: list, initial_balance: fl
         strategy = RsiDivergence(mock_kraken, risk)
     elif strategy_name == "political":
         strategy = PoliticalSignals(mock_kraken, risk)
-    elif strategy_name == "tariff_whiplash":
-        strategy = TariffWhiplashStrategy(mock_kraken, risk)
-    elif strategy_name == "congress_frontrun":
-        strategy = CongressionalFrontRunStrategy(mock_kraken, risk)
+    elif strategy_name in ("tariff_whiplash", "congress_frontrun"):
+        return {"error": f"Strategy '{strategy_name}' not yet implemented"}
     else:
         return {"error": f"Unknown strategy: {strategy_name}"}
 

@@ -57,7 +57,8 @@ from strategies.ema_macd import EmaMacdMomentum
 from strategies.bollinger import BollingerMeanReversion
 from strategies.rsi_divergence import RsiDivergence
 from strategies.political import PoliticalSignals
-from strategies.novel import TariffWhiplashStrategy, CongressionalFrontRunStrategy
+# TariffWhiplashStrategy and CongressionalFrontRunStrategy were planned but never
+# implemented in novel.py. Removing the broken import; these slots are None.
 from strategies.regime import RegimeDetector
 from strategies.ml_signal import MLSignalGenerator
 from utils.features import compute_features
@@ -119,8 +120,8 @@ def main():
     bollinger = BollingerMeanReversion(kraken, risk) if getattr(config, "ENABLE_BOLLINGER", True) else None
     rsi_div = RsiDivergence(kraken, risk) if getattr(config, "ENABLE_RSI_DIVERGENCE", True) else None
     political = PoliticalSignals(kraken, risk)
-    tariff_whiplash = TariffWhiplashStrategy(kraken, risk) if getattr(config, "ENABLE_TARIFF_WHIPLASH", True) else None
-    congress_frontrun = CongressionalFrontRunStrategy(kraken, risk) if getattr(config, "ENABLE_CONGRESS_FRONTRUN", True) else None
+    tariff_whiplash = None   # strategy not yet implemented - see novel.py backlog
+    congress_frontrun = None  # strategy not yet implemented - see novel.py backlog
 
     # ML Signal Generator and Funding Rate Monitor
     ml_signal = None

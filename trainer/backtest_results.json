@@ -1,0 +1,164 @@
+{
+  "run_date": "2026-04-10T04:15:35.305808",
+  "candle_count": 2251,
+  "date_range": {
+    "start": "2025-10-13",
+    "end": "2026-04-10"
+  },
+  "strategies": {
+    "sentiment": {
+      "strategy": "sentiment",
+      "total_trades": 26,
+      "wins": 10,
+      "losses": 16,
+      "win_rate": 38.5,
+      "profit_factor": 0.76,
+      "max_drawdown_pct": 0.45,
+      "sharpe_ratio": -1.89,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 499.09,
+      "total_pnl": -0.91,
+      "total_return_pct": -0.18,
+      "gross_profit": 2.93,
+      "gross_loss": 3.85
+    },
+    "ema_macd": {
+      "strategy": "ema_macd",
+      "total_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown_pct": 0.05,
+      "sharpe_ratio": 0,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 499.76,
+      "total_pnl": -0.24,
+      "total_return_pct": -0.05,
+      "gross_profit": 0,
+      "gross_loss": 0.24
+    },
+    "bollinger": {
+      "strategy": "bollinger",
+      "total_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown_pct": 0.06,
+      "sharpe_ratio": 0,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 499.72,
+      "total_pnl": -0.28,
+      "total_return_pct": -0.06,
+      "gross_profit": 0,
+      "gross_loss": 0.28
+    },
+    "rsi_divergence": {
+      "strategy": "rsi_divergence",
+      "total_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown_pct": 0.05,
+      "sharpe_ratio": 0,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 499.74,
+      "total_pnl": -0.26,
+      "total_return_pct": -0.05,
+      "gross_profit": 0,
+      "gross_loss": 0.26
+    },
+    "grid": {
+      "strategy": "grid",
+      "total_trades": 22,
+      "wins": 16,
+      "losses": 6,
+      "win_rate": 72.7,
+      "profit_factor": 1.65,
+      "max_drawdown_pct": 0.24,
+      "sharpe_ratio": 3.58,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 501.28,
+      "total_pnl": 1.28,
+      "total_return_pct": 0.26,
+      "gross_profit": 3.25,
+      "gross_loss": 1.98
+    },
+    "political": {
+      "strategy": "political",
+      "total_trades": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 100.0,
+      "profit_factor": Infinity,
+      "max_drawdown_pct": 0,
+      "sharpe_ratio": 23.72,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 500.22,
+      "total_pnl": 0.22,
+      "total_return_pct": 0.04,
+      "gross_profit": 0.22,
+      "gross_loss": 0
+    },
+    "tariff_whiplash": {
+      "strategy": "tariff_whiplash",
+      "total_trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown_pct": 0.04,
+      "sharpe_ratio": 0,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 499.82,
+      "total_pnl": -0.18,
+      "total_return_pct": -0.04,
+      "gross_profit": 0,
+      "gross_loss": 0.18
+    },
+    "congress_frontrun": {
+      "strategy": "congress_frontrun",
+      "total_trades": 4,
+      "wins": 2,
+      "losses": 2,
+      "win_rate": 50.0,
+      "profit_factor": 2.42,
+      "max_drawdown_pct": 0.08,
+      "sharpe_ratio": 5.29,
+      "avg_hold_time_hours": 0.0,
+      "final_balance": 500.6,
+      "total_pnl": 0.6,
+      "total_return_pct": 0.12,
+      "gross_profit": 1.03,
+      "gross_loss": 0.42
+    },
+    "_correlation": {
+      "fed": {
+        "count": 6,
+        "avg_change_4h": 0.35,
+        "avg_change_24h": 0.5,
+        "avg_change_72h": -1.9
+      },
+      "crypto": {
+        "count": 4,
+        "avg_change_4h": 0.26,
+        "avg_change_24h": 0.89,
+        "avg_change_72h": -1.43
+      },
+      "tariff": {
+        "count": 10,
+        "avg_change_4h": -0.18,
+        "avg_change_24h": -0.85,
+        "avg_change_72h": -0.03
+      },
+      "regulation": {
+        "count": 1,
+        "avg_change_4h": 0.64,
+        "avg_change_24h": 3.95,
+        "avg_change_72h": 6.59
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "training_effectiveness": {
+    "adjustments_made": 138,
+    "adjustments_that_improved": 16,
+    "adjustments_that_degraded": 45,
+    "adjustments_neutral": 74,
+    "improvement_rate": 0.262,
+    "improvement_rate_history": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.75,
+      0.0,
+      0.036,
+      0.129,
+      0.121,
+      0.121,
+      0.121,
+      0.195,
+      0.229,
+      0.246,
+      0.237,
+      0.237,
+      0.237,
+      0.237,
+      0.262
+    ]
+  },
+  "discovery_effectiveness": {
+    "patterns_proposed": 0,
+    "patterns_validated": 0,
+    "patterns_failed": 0,
+    "patterns_pending": 0,
+    "validation_rate": 0.0,
+    "validation_rate_history": []
+  },
+  "hyperparameters": {
+    "training_interval_ticks": 19,
+    "discovery_interval_cycles": 6,
+    "tuning_strength": 0.03,
+    "min_pattern_confidence": 0.6,
+    "min_pattern_occurrences": 5,
+    "correlation_min_strength": 0.5,
+    "lookback_days_analysis": 14,
+    "revert_threshold": 5
+  },
+  "hyperparameter_history": [
+    {
+      "timestamp": "2026-04-05T14:37:54.685445+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 3,
+      "new": 4,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-05T14:37:54.701321+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 4,
+      "new": 5,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-05T14:38:04.603946+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.1,
+      "new": 0.134,
+      "reason": "High improvement rate (75%) \u2014 tuner making good calls, increase boldness"
+    },
+    {
+      "timestamp": "2026-04-05T14:38:04.654574+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.134,
+      "new": 0.168,
+      "reason": "High improvement rate (75%) \u2014 tuner making good calls, increase boldness"
+    },
+    {
+      "timestamp": "2026-04-05T14:38:17.977461+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.168,
+      "new": 0.2,
+      "reason": "High improvement rate (75%) \u2014 tuner making good calls, increase boldness"
+    },
+    {
+      "timestamp": "2026-04-05T14:38:39.274894+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.2,
+      "new": 0.166,
+      "reason": "Low improvement rate (0%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-05T14:38:39.276071+00:00",
+      "meta_cycle": 1,
+      "param": "ALL",
+      "old": "varied",
+      "new": "defaults",
+      "reason": "Recursive failure: meta-learner IR < 0.2 for 5+ cycles \u2014 reset to defaults"
+    },
+    {
+      "timestamp": "2026-04-06T04:37:42.572204+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 3,
+      "new": 4,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-06T16:54:00.664531+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 4,
+      "new": 5,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-08T09:20:26.835014+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.1,
+      "new": 0.066,
+      "reason": "Low improvement rate (12%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-08T09:21:08.449461+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.066,
+      "new": 0.032,
+      "reason": "Low improvement rate (12%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-08T21:37:05.929291+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.032,
+      "new": 0.03,
+      "reason": "Low improvement rate (12%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-08T21:37:05.930982+00:00",
+      "meta_cycle": 1,
+      "param": "ALL",
+      "old": "varied",
+      "new": "defaults",
+      "reason": "Recursive failure: meta-learner IR < 0.2 for 5+ cycles \u2014 reset to defaults"
+    },
+    {
+      "timestamp": "2026-04-10T16:33:49.529236+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.1,
+      "new": 0.066,
+      "reason": "Low improvement rate (20%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-11T05:44:19.118816+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 3,
+      "new": 2,
+      "reason": "Frequent reverts (3/20 cycles) \u2014 lower threshold to cut losses faster"
+    },
+    {
+      "timestamp": "2026-04-15T06:48:30.782738+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.066,
+      "new": 0.032,
+      "reason": "Low improvement rate (25%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-15T18:55:07.072944+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 2,
+      "new": 3,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-15T19:33:38.691248+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 3,
+      "new": 4,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-16T08:02:03.705110+00:00",
+      "meta_cycle": 1,
+      "param": "revert_threshold",
+      "old": 4,
+      "new": 5,
+      "reason": "No reverts in 20 cycles \u2014 raise threshold to allow more exploration"
+    },
+    {
+      "timestamp": "2026-04-16T08:43:50.294081+00:00",
+      "meta_cycle": 1,
+      "param": "tuning_strength",
+      "old": 0.032,
+      "new": 0.03,
+      "reason": "Low improvement rate (24%) \u2014 tuner making bad calls, shrink step size"
+    },
+    {
+      "timestamp": "2026-04-17T06:06:38.496323+00:00",
+      "meta_cycle": 1,
+      "param": "training_interval_ticks",
+      "old": 12,
+      "new": 19,
+      "reason": "Low IR + calm market \u2014 reduce training frequency to avoid noise"
+    }
+  ],
+  "strategy_lifecycle": {},
+  "meta_cycles": 0,
+  "last_meta_cycle": "2026-04-17T06:06:38.501730+00:00",
+  "consecutive_low_meta_rate": 0
+}

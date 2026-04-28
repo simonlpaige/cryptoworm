@@ -1,0 +1,228 @@
+{
+  "cycle": 36,
+  "timestamp": "2026-04-06T04:37:38.943740",
+  "analysis": {
+    "timestamp": "2026-04-06T04:37:38.995900",
+    "lookback_days": 14,
+    "balance": 500.32484466483453,
+    "total_trades": 1,
+    "total_pnl": 0.3248,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.3248,
+        "avg_win": 0.3248,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 61.5,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": false,
+  "market_context": {
+    "timestamp": "2026-04-06T04:37:40.926868",
+    "fear_greed": {
+      "current": 13,
+      "classification": "Extreme Fear",
+      "week_avg": 10.9,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.63,
+      "bb_width_pct": 5.22,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 69170.6,
+      "sma_20": 67789.07
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": {
+      "open_interest": null,
+      "long_short_ratio": null,
+      "top_trader_ratio": null,
+      "signal": "neutral",
+      "source": "binance_futures_derivatives"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [
+    {
+      "strategy": "sentiment",
+      "param": "stop_loss_pct",
+      "old": 1.7,
+      "new": 1.4,
+      "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+    },
+    {
+      "strategy": "ema_macd",
+      "param": "stop_loss_pct",
+      "old": 1.62,
+      "new": 1.44,
+      "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+    },
+    {
+      "strategy": "rsi_divergence",
+      "param": "stop_loss_pct",
+      "old": 1.8,
+      "new": 1.6,
+      "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)"
+    }
+  ],
+  "adjustments": {
+    "applied": [
+      {
+        "timestamp": "2026-04-06T04:37:42.408296",
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-06T04:37:42.412944",
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-06T04:37:42.417670",
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.6,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)",
+        "issue": "low_volatility"
+      }
+    ],
+    "total": 3
+  },
+  "discovered_patterns": [
+    {
+      "name": "bb_squeeze_oi_rising_fast_24h",
+      "conditions": [
+        "bb_width < 2.5",
+        "open_interest_change > 10"
+      ],
+      "condition_labels": [
+        "bb_squeeze",
+        "oi_rising_fast"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 11,
+      "wins": 7,
+      "win_rate": 0.6364,
+      "avg_return_pct": 4.305,
+      "avg_loss_pct": -3.146,
+      "max_gain_pct": 8.477,
+      "max_drawdown_pct": -5.287,
+      "confidence": 0.35,
+      "description": "When bb_width < 2.5 AND open_interest_change > 10, price moves >1% within 24h (7/11 times, 64% win rate)"
+    },
+    {
+      "name": "oi_rising_fast_reddit_momentum_up_24h",
+      "conditions": [
+        "open_interest_change > 10",
+        "reddit_btc_momentum == rising"
+      ],
+      "condition_labels": [
+        "oi_rising_fast",
+        "reddit_momentum_up"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 11,
+      "wins": 7,
+      "win_rate": 0.6364,
+      "avg_return_pct": 4.107,
+      "avg_loss_pct": -1.256,
+      "max_gain_pct": 6.971,
+      "max_drawdown_pct": -1.709,
+      "confidence": 0.35,
+      "description": "When open_interest_change > 10 AND reddit_btc_momentum == rising, price moves >1% within 24h (7/11 times, 64% win rate)"
+    },
+    {
+      "name": "rsi_overbought_oi_rising_fast_4h",
+      "conditions": [
+        "rsi_14 > 70",
+        "open_interest_change > 10"
+      ],
+      "condition_labels": [
+        "rsi_overbought",
+        "oi_rising_fast"
+      ],
+      "horizon": "4h",
+      "target_field": "price_change_4h",
+      "occurrences": 10,
+      "wins": 6,
+      "win_rate": 0.6,
+      "avg_return_pct": 3.187,
+      "avg_loss_pct": -1.935,
+      "max_gain_pct": 6.628,
+      "max_drawdown_pct": -3.418,
+      "confidence": 0.3,
+      "description": "When rsi_14 > 70 AND open_interest_change > 10, price moves >1% within 4h (6/10 times, 60% win rate)"
+    }
+  ],
+  "discovery_summary": {
+    "signal_history_entries": 201,
+    "oldest_entry": "2026-04-05T14:35:38Z",
+    "newest_entry": "2026-04-06T04:37:42Z",
+    "total_proposals": 0,
+    "proposals_by_status": {
+      "proposed": 0,
+      "testing": 0,
+      "active": 0,
+      "retired": 0
+    },
+    "high_confidence_proposals": []
+  }
+}

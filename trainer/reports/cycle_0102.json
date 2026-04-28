@@ -1,0 +1,268 @@
+{
+  "cycle": 102,
+  "timestamp": "2026-04-11T11:55:43.141510",
+  "analysis": {
+    "timestamp": "2026-04-11T11:55:43.147861",
+    "lookback_days": 14,
+    "balance": 500.57,
+    "total_trades": 58,
+    "total_pnl": 2.3598,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 20,
+        "wins": 20,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.3438,
+        "avg_win": 0.0172,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 22,
+        "wins": 22,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 2.1954,
+        "avg_win": 0.0998,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 16,
+        "wins": 8,
+        "losses": 8,
+        "win_rate": 50.0,
+        "total_pnl": -0.1794,
+        "avg_win": 0.0365,
+        "avg_loss": -0.0589,
+        "risk_reward": 0.62,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [
+          "bad_risk_reward:0.62"
+        ],
+        "status": "simulated_needs_improvement",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": true,
+  "market_context": {
+    "timestamp": "2026-04-11T11:55:45.139374",
+    "fear_greed": {
+      "current": 15,
+      "classification": "Extreme Fear",
+      "week_avg": 14.0,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.28,
+      "bb_width_pct": 0.95,
+      "regime": "low",
+      "trend": "bearish",
+      "current_price": 72945.3,
+      "sma_20": 72970.58
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": null,
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bearish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [
+    {
+      "strategy": "sentiment",
+      "param": "stop_loss_pct",
+      "old": 1.4,
+      "new": 1.1,
+      "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)"
+    },
+    {
+      "strategy": "ema_macd",
+      "param": "stop_loss_pct",
+      "old": 1.44,
+      "new": 1.26,
+      "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)"
+    },
+    {
+      "strategy": "rsi_divergence",
+      "param": "take_profit_pct",
+      "old": 3.5,
+      "new": 3.75,
+      "reason": "Bad R:R (0.62). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)"
+    }
+  ],
+  "adjustments": {
+    "applied": [
+      {
+        "timestamp": "2026-04-11T11:55:45.773517",
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.4,
+        "new_value": 1.1,
+        "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-11T11:55:45.784869",
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.44,
+        "new_value": 1.26,
+        "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-11T11:55:45.795726",
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.75,
+        "reason": "Bad R:R (0.62). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)",
+        "issue": "bad_risk_reward:0.62"
+      }
+    ],
+    "total": 3
+  },
+  "discovered_patterns": [
+    {
+      "name": "fear_extreme_low_bb_wide_volume_drop_24h",
+      "conditions": [
+        "fear_greed < 20",
+        "bb_width > 5.0",
+        "volume_change < -30"
+      ],
+      "condition_labels": [
+        "fear_extreme_low",
+        "bb_wide",
+        "volume_drop"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 23,
+      "wins": 19,
+      "win_rate": 0.8261,
+      "avg_return_pct": 3.129,
+      "avg_loss_pct": 0.0,
+      "max_gain_pct": 8.899,
+      "max_drawdown_pct": 0.402,
+      "confidence": 0.8261,
+      "description": "When fear_greed < 20 AND bb_width > 5.0 AND volume_change < -30, price moves >1% within 24h (19/23 times, 83% win rate)"
+    },
+    {
+      "name": "fear_extreme_low_volume_drop_atr_low_24h",
+      "conditions": [
+        "fear_greed < 20",
+        "volume_change < -30",
+        "atr_pct < 1.5"
+      ],
+      "condition_labels": [
+        "fear_extreme_low",
+        "volume_drop",
+        "atr_low"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 39,
+      "wins": 32,
+      "win_rate": 0.8205,
+      "avg_return_pct": 2.725,
+      "avg_loss_pct": -0.772,
+      "max_gain_pct": 6.26,
+      "max_drawdown_pct": -0.772,
+      "confidence": 0.8205,
+      "description": "When fear_greed < 20 AND volume_change < -30 AND atr_pct < 1.5, price moves >1% within 24h (32/39 times, 82% win rate)"
+    },
+    {
+      "name": "bb_wide_volume_drop_atr_low_24h",
+      "conditions": [
+        "bb_width > 5.0",
+        "volume_change < -30",
+        "atr_pct < 1.5"
+      ],
+      "condition_labels": [
+        "bb_wide",
+        "volume_drop",
+        "atr_low"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 21,
+      "wins": 17,
+      "win_rate": 0.8095,
+      "avg_return_pct": 2.607,
+      "avg_loss_pct": 0.0,
+      "max_gain_pct": 4.961,
+      "max_drawdown_pct": 0.402,
+      "confidence": 0.8095,
+      "description": "When bb_width > 5.0 AND volume_change < -30 AND atr_pct < 1.5, price moves >1% within 24h (17/21 times, 81% win rate)"
+    }
+  ],
+  "discovery_summary": {
+    "signal_history_entries": 276,
+    "oldest_entry": "2026-04-05T14:35:38Z",
+    "newest_entry": "2026-04-11T11:55:45Z",
+    "total_proposals": 11,
+    "proposals_by_status": {
+      "proposed": 11,
+      "testing": 0,
+      "active": 0,
+      "retired": 0
+    },
+    "high_confidence_proposals": [
+      "discovery_fear_ext_atr_low",
+      "discovery_fear_ext_volume_d",
+      "discovery_volume_d_atr_low",
+      "discovery_fear_ext_volume_d_atr_low",
+      "discovery_fear_ext_bb_wide_volume_d",
+      "discovery_fear_ext_rsi_over_atr_low",
+      "discovery_bb_wide_volume_d_atr_low",
+      "discovery_fear_ext_bb_squee"
+    ]
+  }
+}

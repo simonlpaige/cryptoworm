@@ -1,0 +1,2974 @@
+[
+  {
+    "cycle": 1,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.95,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 2,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.9,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 3,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.85,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 4,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.8,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 5,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.75,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 6,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.7,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 7,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.65,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 8,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.6,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 9,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.55,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 10,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.5,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 11,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.45,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 12,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.4,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 13,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.35,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 14,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.3,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 15,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.25,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 16,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.2,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 17,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.15,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 18,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.1,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 19,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": 0.05,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 20,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.0,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 21,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.05,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 22,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.1,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 23,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.15,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 24,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.2,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 25,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.25,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 26,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.3,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 27,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.35,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 28,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.4,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 29,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.45,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 30,
+    "timestamp": "2026-01-01T00:00:00Z",
+    "total_pnl": -0.5,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 0.02,
+        "new_value": 0.03,
+        "reason": "test"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 36,
+    "timestamp": "2026-04-06T04:37:38.943740",
+    "total_pnl": 0.3248,
+    "total_trades": 1,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.6,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 37,
+    "timestamp": "2026-04-06T05:38:58.818122",
+    "total_pnl": 0.3248,
+    "total_trades": 1,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.4,
+        "new_value": 1.1,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.44,
+        "new_value": 1.26,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.6,
+        "new_value": 1.5,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.6 \u2192 1.5 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 38,
+    "timestamp": "2026-04-06T06:40:18.153891",
+    "total_pnl": 0.3248,
+    "total_trades": 1,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.1,
+        "new_value": 1.0,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.26,
+        "new_value": 1.2,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 39,
+    "timestamp": "2026-04-06T07:41:38.472642",
+    "total_pnl": 0.3248,
+    "total_trades": 1,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 40,
+    "timestamp": "2026-04-06T08:42:59.753526",
+    "total_pnl": 0.3248,
+    "total_trades": 1,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 41,
+    "timestamp": "2026-04-06T09:44:21.491433",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 42,
+    "timestamp": "2026-04-06T10:45:46.178370",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 43,
+    "timestamp": "2026-04-06T11:47:07.559421",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 44,
+    "timestamp": "2026-04-06T12:48:28.606260",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 45,
+    "timestamp": "2026-04-06T13:49:50.179089",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 46,
+    "timestamp": "2026-04-06T14:51:11.923496",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 47,
+    "timestamp": "2026-04-06T15:52:31.972032",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 48,
+    "timestamp": "2026-04-06T16:53:54.681775",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 49,
+    "timestamp": "2026-04-06T17:55:16.512817",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 50,
+    "timestamp": "2026-04-06T18:56:37.786094",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 51,
+    "timestamp": "2026-04-06T19:57:59.891790",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 52,
+    "timestamp": "2026-04-06T20:59:21.350903",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 53,
+    "timestamp": "2026-04-06T22:00:42.310193",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 54,
+    "timestamp": "2026-04-06T23:02:03.596023",
+    "total_pnl": 0.8529,
+    "total_trades": 2,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 55,
+    "timestamp": "2026-04-08T04:13:45.317397",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 3.2,
+        "new_value": 3.5,
+        "reason": "Bad R:R (1.17). take_profit_pct: 3.2 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 55,
+    "timestamp": "2026-04-08T04:14:24.413323",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.8,
+        "reason": "Bad R:R (1.17). take_profit_pct: 3.5 \u2192 3.8 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 56,
+    "timestamp": "2026-04-08T05:14:58.809590",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 3.8,
+        "new_value": 4.1,
+        "reason": "Bad R:R (1.17). take_profit_pct: 3.8 \u2192 4.1 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 56,
+    "timestamp": "2026-04-08T05:15:43.549625",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 4.1,
+        "new_value": 4.4,
+        "reason": "Bad R:R (1.17). take_profit_pct: 4.1 \u2192 4.4 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 57,
+    "timestamp": "2026-04-08T06:16:20.226731",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 4.4,
+        "new_value": 4.7,
+        "reason": "Bad R:R (1.17). take_profit_pct: 4.4 \u2192 4.7 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 57,
+    "timestamp": "2026-04-08T06:17:04.812261",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "take_profit_pct",
+        "old_value": 4.7,
+        "new_value": 5.0,
+        "reason": "Bad R:R (1.17). take_profit_pct: 4.7 \u2192 5.0 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 58,
+    "timestamp": "2026-04-08T07:17:42.283383",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 60,
+        "new_value": 59,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 60 \u2192 59 (decrease, step=1.00)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 58,
+    "timestamp": "2026-04-08T07:18:25.103245",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 59,
+        "new_value": 58,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 59 \u2192 58 (decrease, step=1.00)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 59,
+    "timestamp": "2026-04-08T08:19:01.994028",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 58,
+        "new_value": 57,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 58 \u2192 57 (decrease, step=1.00)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 59,
+    "timestamp": "2026-04-08T08:19:44.375815",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 57,
+        "new_value": 56,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 57 \u2192 56 (decrease, step=1.00)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 60,
+    "timestamp": "2026-04-08T09:20:23.169452",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 56,
+        "new_value": 55,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 56 \u2192 55 (decrease, step=1.00)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 60,
+    "timestamp": "2026-04-08T09:21:05.176986",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 61,
+    "timestamp": "2026-04-08T10:21:44.482659",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 61,
+    "timestamp": "2026-04-08T10:22:26.236596",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 62,
+    "timestamp": "2026-04-08T11:23:03.770398",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 62,
+    "timestamp": "2026-04-08T11:23:45.488781",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 63,
+    "timestamp": "2026-04-08T12:24:26.001960",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 63,
+    "timestamp": "2026-04-08T12:25:06.704118",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 64,
+    "timestamp": "2026-04-08T13:25:55.560080",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 65,
+    "timestamp": "2026-04-08T14:27:17.885381",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 66,
+    "timestamp": "2026-04-08T15:28:40.404999",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 67,
+    "timestamp": "2026-04-08T16:30:03.406179",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 68,
+    "timestamp": "2026-04-08T17:31:23.774452",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 69,
+    "timestamp": "2026-04-08T18:32:46.384244",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 70,
+    "timestamp": "2026-04-08T19:34:09.009823",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 71,
+    "timestamp": "2026-04-08T20:35:32.244355",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 72,
+    "timestamp": "2026-04-08T21:36:59.556675",
+    "total_pnl": 0.5762,
+    "total_trades": 3,
+    "adjustments_applied": [],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 73,
+    "timestamp": "2026-04-10T05:13:57.596965",
+    "total_pnl": 4.0169,
+    "total_trades": 60,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.87). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 74,
+    "timestamp": "2026-04-10T06:15:49.472908",
+    "total_pnl": 3.8742,
+    "total_trades": 58,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (1.00). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 75,
+    "timestamp": "2026-04-10T07:17:31.495992",
+    "total_pnl": 3.7732,
+    "total_trades": 58,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.75,
+        "reason": "Bad R:R (1.05). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 76,
+    "timestamp": "2026-04-10T08:19:11.666632",
+    "total_pnl": 3.7491,
+    "total_trades": 57,
+    "adjustments_applied": [],
+    "was_reverted": true,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 77,
+    "timestamp": "2026-04-10T09:21:18.186441",
+    "total_pnl": 3.6034,
+    "total_trades": 56,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (1.16). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 78,
+    "timestamp": "2026-04-10T10:22:54.359082",
+    "total_pnl": 3.2989,
+    "total_trades": 54,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (0.73). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 79,
+    "timestamp": "2026-04-10T11:24:43.300883",
+    "total_pnl": 3.2131,
+    "total_trades": 54,
+    "adjustments_applied": [],
+    "was_reverted": true,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 80,
+    "timestamp": "2026-04-10T12:26:23.297717",
+    "total_pnl": 3.2075,
+    "total_trades": 54,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.73). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 81,
+    "timestamp": "2026-04-10T13:28:14.880494",
+    "total_pnl": 3.3036,
+    "total_trades": 54,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.47%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.47%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (0.77). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 82,
+    "timestamp": "2026-04-10T14:29:50.458169",
+    "total_pnl": 3.4316,
+    "total_trades": 54,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.4,
+        "new_value": 1.1,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.44,
+        "new_value": 1.26,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.75,
+        "reason": "Bad R:R (0.72). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 83,
+    "timestamp": "2026-04-10T15:31:57.713229",
+    "total_pnl": 3.1266,
+    "total_trades": 55,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.1,
+        "new_value": 1.0,
+        "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.26,
+        "new_value": 1.2,
+        "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.75,
+        "new_value": 4.0,
+        "reason": "Bad R:R (0.46). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 84,
+    "timestamp": "2026-04-10T16:33:43.580354",
+    "total_pnl": 2.9933,
+    "total_trades": 57,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.0,
+        "new_value": 4.25,
+        "reason": "Bad R:R (0.38). take_profit_pct: 4.0 \u2192 4.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 85,
+    "timestamp": "2026-04-10T17:35:57.160082",
+    "total_pnl": 3.1352,
+    "total_trades": 59,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.25,
+        "new_value": 4.5,
+        "reason": "Bad R:R (0.30). take_profit_pct: 4.25 \u2192 4.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 86,
+    "timestamp": "2026-04-10T18:38:00.018448",
+    "total_pnl": 3.3462,
+    "total_trades": 60,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.5,
+        "new_value": 4.75,
+        "reason": "Bad R:R (0.35). take_profit_pct: 4.5 \u2192 4.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 87,
+    "timestamp": "2026-04-10T19:40:15.471264",
+    "total_pnl": 3.5507,
+    "total_trades": 61,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.75,
+        "new_value": 5.0,
+        "reason": "Bad R:R (0.32). take_profit_pct: 4.75 \u2192 5.0 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 88,
+    "timestamp": "2026-04-10T20:42:21.092168",
+    "total_pnl": 3.6284,
+    "total_trades": 62,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.8,
+        "reason": "Low volatility regime (ATR=0.61%). stop_loss_pct: 2.0 \u2192 1.8 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 89,
+    "timestamp": "2026-04-10T21:44:20.985455",
+    "total_pnl": 3.5073,
+    "total_trades": 62,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.6,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 90,
+    "timestamp": "2026-04-10T22:45:54.168297",
+    "total_pnl": 3.3507,
+    "total_trades": 61,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.6,
+        "new_value": 1.5,
+        "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 1.6 \u2192 1.5 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 91,
+    "timestamp": "2026-04-10T23:48:07.100416",
+    "total_pnl": 3.197,
+    "total_trades": 61,
+    "adjustments_applied": [],
+    "was_reverted": true,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 92,
+    "timestamp": "2026-04-11T01:37:12.570034",
+    "total_pnl": 3.2837,
+    "total_trades": 61,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.41). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 93,
+    "timestamp": "2026-04-11T02:38:54.308666",
+    "total_pnl": 3.2857,
+    "total_trades": 62,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (0.37). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 94,
+    "timestamp": "2026-04-11T03:40:49.030411",
+    "total_pnl": 3.2801,
+    "total_trades": 62,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.4,
+        "new_value": 1.1,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.44,
+        "new_value": 1.26,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.75,
+        "reason": "Bad R:R (0.31). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 95,
+    "timestamp": "2026-04-11T04:42:27.835825",
+    "total_pnl": 3.1416,
+    "total_trades": 61,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.1,
+        "new_value": 1.0,
+        "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.26,
+        "new_value": 1.2,
+        "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.75,
+        "new_value": 4.0,
+        "reason": "Bad R:R (0.29). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 96,
+    "timestamp": "2026-04-11T05:44:16.021541",
+    "total_pnl": 2.9984,
+    "total_trades": 61,
+    "adjustments_applied": [],
+    "was_reverted": true,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 97,
+    "timestamp": "2026-04-11T06:45:51.290028",
+    "total_pnl": 2.9661,
+    "total_trades": 61,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.37%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.37%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.44). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 98,
+    "timestamp": "2026-04-11T07:48:17.429415",
+    "total_pnl": 2.7283,
+    "total_trades": 60,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.35%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.35%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (0.44). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 99,
+    "timestamp": "2026-04-11T08:49:49.726578",
+    "total_pnl": 2.4221,
+    "total_trades": 60,
+    "adjustments_applied": [],
+    "was_reverted": true,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 100,
+    "timestamp": "2026-04-11T09:51:50.822120",
+    "total_pnl": 2.1104,
+    "total_trades": 59,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.34%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.34%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.39). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 101,
+    "timestamp": "2026-04-11T10:53:36.019865",
+    "total_pnl": 2.0456,
+    "total_trades": 59,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.7,
+        "new_value": 1.4,
+        "reason": "Low volatility regime (ATR=0.31%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.62,
+        "new_value": 1.44,
+        "reason": "Low volatility regime (ATR=0.31%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.25,
+        "new_value": 3.5,
+        "reason": "Bad R:R (0.39). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 102,
+    "timestamp": "2026-04-11T11:55:43.141510",
+    "total_pnl": 2.3598,
+    "total_trades": 58,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.4,
+        "new_value": 1.1,
+        "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.44,
+        "new_value": 1.26,
+        "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.5,
+        "new_value": 3.75,
+        "reason": "Bad R:R (0.62). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 103,
+    "timestamp": "2026-04-11T12:57:32.161423",
+    "total_pnl": 2.5407,
+    "total_trades": 57,
+    "adjustments_applied": [
+      {
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 1.1,
+        "new_value": 1.0,
+        "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)"
+      },
+      {
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.26,
+        "new_value": 1.2,
+        "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)"
+      },
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.75,
+        "new_value": 4.0,
+        "reason": "Bad R:R (1.17). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 104,
+    "timestamp": "2026-04-11T13:59:21.696292",
+    "total_pnl": 2.6026,
+    "total_trades": 57,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.8,
+        "reason": "Low volatility regime (ATR=0.27%). stop_loss_pct: 2.0 \u2192 1.8 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 105,
+    "timestamp": "2026-04-11T15:01:16.590313",
+    "total_pnl": 2.455,
+    "total_trades": 55,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.0,
+        "new_value": 4.25,
+        "reason": "Bad R:R (0.96). take_profit_pct: 4.0 \u2192 4.25 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 106,
+    "timestamp": "2026-04-11T16:03:42.163997",
+    "total_pnl": 2.477,
+    "total_trades": 54,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.25,
+        "new_value": 4.5,
+        "reason": "Bad R:R (0.89). take_profit_pct: 4.25 \u2192 4.5 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 107,
+    "timestamp": "2026-04-15T05:47:55.331235",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.5,
+        "new_value": 4.75,
+        "reason": "Bad R:R (0.00). take_profit_pct: 4.5 \u2192 4.75 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 108,
+    "timestamp": "2026-04-15T06:48:27.880198",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 4.75,
+        "new_value": 5.0,
+        "reason": "Bad R:R (0.00). take_profit_pct: 4.75 \u2192 5.0 (increase, step=0.25)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 109,
+    "timestamp": "2026-04-15T07:49:01.298294",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 2.1,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 1.8 \u2192 2.1 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 110,
+    "timestamp": "2026-04-15T08:49:34.907443",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 2.1,
+        "new_value": 2.4,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.1 \u2192 2.4 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 111,
+    "timestamp": "2026-04-15T09:50:08.440792",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 2.4,
+        "new_value": 2.7,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.4 \u2192 2.7 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 112,
+    "timestamp": "2026-04-15T10:50:41.518904",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 2.7,
+        "new_value": 3.0,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.7 \u2192 3.0 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 113,
+    "timestamp": "2026-04-15T11:51:16.139379",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.0,
+        "new_value": 3.3,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.0 \u2192 3.3 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 114,
+    "timestamp": "2026-04-15T12:51:48.982658",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 114,
+    "timestamp": "2026-04-15T13:27:58.647794",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 115,
+    "timestamp": "2026-04-15T13:52:21.904247",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 115,
+    "timestamp": "2026-04-15T14:28:54.433969",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 116,
+    "timestamp": "2026-04-15T14:52:56.256399",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 116,
+    "timestamp": "2026-04-15T15:29:51.559388",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 117,
+    "timestamp": "2026-04-15T15:53:26.947798",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 117,
+    "timestamp": "2026-04-15T16:30:46.853802",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.56%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 118,
+    "timestamp": "2026-04-15T16:53:57.651280",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 118,
+    "timestamp": "2026-04-15T17:31:42.456876",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.57%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 119,
+    "timestamp": "2026-04-15T17:54:31.821136",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 119,
+    "timestamp": "2026-04-15T18:32:38.282879",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 120,
+    "timestamp": "2026-04-15T18:55:03.660219",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 120,
+    "timestamp": "2026-04-15T19:33:35.366935",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 121,
+    "timestamp": "2026-04-15T19:56:34.797949",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 121,
+    "timestamp": "2026-04-15T20:34:56.954654",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.65%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 122,
+    "timestamp": "2026-04-15T20:58:02.207498",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 122,
+    "timestamp": "2026-04-15T21:36:19.492545",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.64%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 123,
+    "timestamp": "2026-04-15T21:59:21.150114",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 123,
+    "timestamp": "2026-04-15T22:38:07.994084",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 124,
+    "timestamp": "2026-04-15T23:00:25.314522",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 124,
+    "timestamp": "2026-04-15T23:39:33.805094",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 125,
+    "timestamp": "2026-04-16T00:01:24.705520",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 125,
+    "timestamp": "2026-04-16T01:34:00.026195",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 126,
+    "timestamp": "2026-04-16T01:55:48.721724",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 126,
+    "timestamp": "2026-04-16T02:35:31.097340",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 127,
+    "timestamp": "2026-04-16T02:56:47.269093",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 127,
+    "timestamp": "2026-04-16T03:36:55.422569",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.64%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 128,
+    "timestamp": "2026-04-16T03:57:45.894148",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 128,
+    "timestamp": "2026-04-16T04:38:21.453630",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.59%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 129,
+    "timestamp": "2026-04-16T04:58:52.319568",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 129,
+    "timestamp": "2026-04-16T05:39:50.673297",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.57%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 130,
+    "timestamp": "2026-04-16T05:59:51.397648",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 130,
+    "timestamp": "2026-04-16T06:41:11.191371",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 131,
+    "timestamp": "2026-04-16T07:00:51.125793",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 131,
+    "timestamp": "2026-04-16T07:42:33.474902",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.55%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 132,
+    "timestamp": "2026-04-16T08:02:00.573220",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 132,
+    "timestamp": "2026-04-16T08:43:47.150998",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.56%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 133,
+    "timestamp": "2026-04-16T09:02:31.421415",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 133,
+    "timestamp": "2026-04-16T09:44:42.235051",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.5%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 134,
+    "timestamp": "2026-04-16T10:03:03.058924",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 134,
+    "timestamp": "2026-04-16T10:45:36.785215",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 135,
+    "timestamp": "2026-04-16T11:03:34.079195",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 135,
+    "timestamp": "2026-04-16T11:46:35.086111",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 136,
+    "timestamp": "2026-04-16T12:04:08.693854",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 136,
+    "timestamp": "2026-04-16T12:47:40.896262",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.44%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 137,
+    "timestamp": "2026-04-16T13:04:44.456767",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 137,
+    "timestamp": "2026-04-16T13:49:16.635075",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.46%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 138,
+    "timestamp": "2026-04-16T14:06:06.693300",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 138,
+    "timestamp": "2026-04-16T14:50:42.141035",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 139,
+    "timestamp": "2026-04-16T15:07:04.484636",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 139,
+    "timestamp": "2026-04-16T15:52:00.143601",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 140,
+    "timestamp": "2026-04-16T16:07:37.864706",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 140,
+    "timestamp": "2026-04-16T16:52:56.406107",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.68%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 141,
+    "timestamp": "2026-04-17T03:03:51.359884",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 142,
+    "timestamp": "2026-04-17T04:04:45.763341",
+    "total_pnl": 0.3216,
+    "total_trades": 3,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 143,
+    "timestamp": "2026-04-17T05:05:39.938356",
+    "total_pnl": 0.7142,
+    "total_trades": 4,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 144,
+    "timestamp": "2026-04-17T06:06:35.375824",
+    "total_pnl": 0.7142,
+    "total_trades": 4,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.51%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 145,
+    "timestamp": "2026-04-17T07:07:31.031256",
+    "total_pnl": 0.7142,
+    "total_trades": 4,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.3,
+        "new_value": 3.5,
+        "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  },
+  {
+    "cycle": 146,
+    "timestamp": "2026-04-17T08:08:26.381367",
+    "total_pnl": 0.7142,
+    "total_trades": 4,
+    "adjustments_applied": [
+      {
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.41%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+      }
+    ],
+    "was_reverted": false,
+    "market_regime": "low"
+  }
+]

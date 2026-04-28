@@ -1,0 +1,11 @@
+{
+  "tuning_strength": 0.03,
+  "lookback_days_analysis": 14,
+  "training_interval_ticks": 19,
+  "min_pattern_confidence": 0.6,
+  "min_pattern_occurrences": 5,
+  "correlation_min_strength": 0.5,
+  "discovery_interval_cycles": 6,
+  "revert_threshold": 5,
+  "_updated_at": "2026-04-17T06:06:38.498295+00:00"
+}

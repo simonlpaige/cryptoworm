@@ -1,0 +1,528 @@
+[
+  {
+    "timestamp": "2026-04-03T15:01:37.625919",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-03T15:01:37.626728",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 0.95,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-03T15:01:37.673250",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-03T21:05:05.056909",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-03T21:05:05.068131",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 0.89,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-04T03:13:04.524733",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-04T03:13:04.535025",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 0.5,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-04T03:13:04.542962",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-04T09:21:08.634969",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-04T09:21:08.646239",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 0.41,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-04T09:21:08.654169",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-06T09:44:29.943511",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-06T15:52:38.216234",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-06T22:00:47.352677",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-06T22:00:47.360584",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.74,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-06T22:00:47.365905",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-08T09:20:28.403971",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-08T09:21:10.211099",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-08T15:28:47.227650",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-08T21:37:10.077910",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-08T21:37:10.098464",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.5,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-08T21:37:10.107615",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-10T10:23:02.485843",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-10T10:23:02.497239",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.28,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-10T10:23:02.509345",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-10T16:33:55.279845",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-10T16:33:55.308705",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.9,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-10T16:33:55.332687",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-10T22:46:00.981422",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-10T22:46:00.996973",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-11T06:45:55.754425",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-11T06:45:55.777923",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.8,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-11T12:57:36.592214",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-11T12:57:36.621602",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 0.95,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-11T12:57:36.629743",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-15T10:50:45.809376",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-15T10:50:45.812918",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.9,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-15T16:54:02.449580",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-15T16:54:02.456775",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.28,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-15T16:54:02.469957",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-15T18:32:43.047533",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-15T18:32:43.063165",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.26,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-15T23:00:29.672012",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-15T23:00:29.685308",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 2.13,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T01:34:04.564564",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-16T01:34:04.600058",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 2.18,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T01:34:04.635945",
+    "module": "volatility",
+    "signal": "atr_contracting",
+    "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+    "action": "Tighten stops, increase Bollinger/grid weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-16T05:59:55.912638",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-16T05:59:55.947678",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 2.23,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T05:59:55.973270",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-16T07:42:37.916207",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-16T07:42:37.945157",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 2.12,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T07:42:37.963450",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-16T12:04:13.858591",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-16T12:04:13.880605",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.29,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T13:49:21.300225",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-16T13:49:21.346408",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 1.12,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  },
+  {
+    "timestamp": "2026-04-16T13:49:21.370589",
+    "module": "volatility",
+    "signal": "atr_expanding",
+    "implication": "Volatility expanding \u2014 momentum strategies favored",
+    "action": "Widen stops (ATR-based), increase EMA/MACD weighting",
+    "confidence": 0.6
+  },
+  {
+    "timestamp": "2026-04-17T08:08:30.868094",
+    "module": "fng_patterns",
+    "signal": "sustained_extreme_fear",
+    "days": 14,
+    "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+    "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+    "confidence": 0.7
+  },
+  {
+    "timestamp": "2026-04-17T08:08:30.875415",
+    "module": "volatility",
+    "signal": "bollinger_squeeze",
+    "bb_width_pct": 2.16,
+    "implication": "Tight BB squeeze \u2014 breakout expected within 24-48h. Direction uncertain.",
+    "action": "Prepare both long and short entries. Widen stops slightly to avoid fakeout stops.",
+    "confidence": 0.65
+  }
+]

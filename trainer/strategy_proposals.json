@@ -1,0 +1,236 @@
+{
+  "status": "ok",
+  "timestamp": "2026-04-17T02:19:31.996612",
+  "candles_analyzed": 721,
+  "top_correlations": [
+    {
+      "indicator": "vwap",
+      "correlation": -0.3346,
+      "abs_corr": 0.3346,
+      "samples": 709,
+      "mean_value": 69694.5347,
+      "std_value": 1006.0966
+    },
+    {
+      "indicator": "bb_upper",
+      "correlation": -0.146,
+      "abs_corr": 0.146,
+      "samples": 690,
+      "mean_value": 70741.2156,
+      "std_value": 2529.7078
+    },
+    {
+      "indicator": "ema_12",
+      "correlation": -0.1457,
+      "abs_corr": 0.1457,
+      "samples": 698,
+      "mean_value": 69777.9331,
+      "std_value": 2415.0526
+    },
+    {
+      "indicator": "volume_sma_20",
+      "correlation": -0.1399,
+      "abs_corr": 0.1399,
+      "samples": 690,
+      "mean_value": 81.5657,
+      "std_value": 31.0744
+    },
+    {
+      "indicator": "sma_20",
+      "correlation": -0.1345,
+      "abs_corr": 0.1345,
+      "samples": 690,
+      "mean_value": 69729.4108,
+      "std_value": 2378.1949
+    },
+    {
+      "indicator": "rsi_7",
+      "correlation": 0.134,
+      "abs_corr": 0.134,
+      "samples": 702,
+      "mean_value": 49.3588,
+      "std_value": 17.1037
+    },
+    {
+      "indicator": "volume_ratio",
+      "correlation": 0.1321,
+      "abs_corr": 0.1321,
+      "samples": 690,
+      "mean_value": 1.0218,
+      "std_value": 0.9936
+    },
+    {
+      "indicator": "macd",
+      "correlation": -0.1318,
+      "abs_corr": 0.1318,
+      "samples": 684,
+      "mean_value": 12.9999,
+      "std_value": 356.6976
+    },
+    {
+      "indicator": "rsi_vol_product",
+      "correlation": 0.1296,
+      "abs_corr": 0.1296,
+      "samples": 690,
+      "mean_value": 51.0874,
+      "std_value": 55.017
+    },
+    {
+      "indicator": "obv",
+      "correlation": -0.1183,
+      "abs_corr": 0.1183,
+      "samples": 709,
+      "mean_value": -1218.5917,
+      "std_value": 1165.1104
+    }
+  ],
+  "proposals": [
+    {
+      "name": "VWAP Mean Reversion Mean-Reverting",
+      "hypothesis": "The strong negative correlation (-0.3346) between VWAP and future 12h returns suggests that when price deviates significantly above the VWAP, the asset is overextended and prone to a reversion to the mean. In a ranging regime (ADX ~2.73), the VWAP acts as a magnetic anchor for price.",
+      "entry_long": "Price < VWAP AND VWAP < (Current Price - 2 * ATR)",
+      "entry_short": "Price > VWAP AND VWAP > (Current Price + 2 * ATR)",
+      "exit_tp_pct": 1.5,
+      "exit_sl_pct": 0.8,
+      "key_indicator": "vwap",
+      "threshold_buy": 0.0,
+      "threshold_sell": 0.0,
+      "confidence": "high"
+    },
+    {
+      "name": "RSI-Volume Momentum Divergence",
+      "hypothesis": "The positive correlation of RSI_7 (0.134) and Volume_Ratio (0.132) suggests that rising momentum paired with increasing relative volume precedes upward price movement. This captures the 'accumulation' phase in a low-volatility ranging market.",
+      "entry_long": "RSI_7 > 55 AND Volume_Ratio > 1.2",
+      "entry_short": "RSI_7 < 45 AND Volume_Ratio < 0.8",
+      "exit_tp_pct": 2.5,
+      "exit_sl_pct": 1.2,
+      "key_indicator": "rsi_7",
+      "threshold_buy": 55.0,
+      "threshold_sell": 45.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "Bollinger Band Expansion Exhaustion",
+      "hypothesis": "The negative correlation of BB_Upper (-0.146) with future returns implies that touching or exceeding the upper band often signals a local top. Conversely, the negative correlation of BB_Lower suggests that extreme lows in a range-bound market are often followed by a bounce.",
+      "entry_long": "Price <= BB_Lower AND MACD < 0",
+      "entry_short": "Price >= BB_Upper AND MACD > 0",
+      "exit_tp_pct": 2.0,
+      "exit_sl_pct": 1.0,
+      "key_indicator": "bb_upper",
+      "threshold_buy": 0.0,
+      "threshold_sell": 0.0,
+      "confidence": "medium"
+    },
+    {
+      "name": "discovery_fear_ext_bb_wide_volume_d",
+      "description": "When fear_greed < 20 AND bb_width > 5.0 AND volume_change < -30, price moves >1% within 24h (19/23 times, 83% win rate)",
+      "entry_conditions": [
+        "fear_greed < 20",
+        "bb_width > 5.0",
+        "volume_change < -30"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "expected_win_rate": 0.8261,
+      "expected_avg_return": 3.129,
+      "sample_size": 23,
+      "confidence": "high",
+      "proposed_sl": 1.0,
+      "proposed_tp": 6.23,
+      "status": "testing",
+      "created_at": "2026-04-17T06:06:38Z",
+      "last_updated": "2026-04-17T06:06:38Z",
+      "promoted_at": "2026-04-17T06:06:38Z"
+    },
+    {
+      "name": "discovery_bb_wide_volume_d_atr_low",
+      "description": "When bb_width > 5.0 AND volume_change < -30 AND atr_pct < 1.5, price moves >1% within 24h (17/21 times, 81% win rate)",
+      "entry_conditions": [
+        "bb_width > 5.0",
+        "volume_change < -30",
+        "atr_pct < 1.5"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "expected_win_rate": 0.8095,
+      "expected_avg_return": 2.607,
+      "sample_size": 21,
+      "confidence": "high",
+      "proposed_sl": 1.0,
+      "proposed_tp": 3.47,
+      "status": "testing",
+      "created_at": "2026-04-17T06:06:38Z",
+      "last_updated": "2026-04-17T06:06:38Z",
+      "promoted_at": "2026-04-17T06:06:38Z"
+    },
+    {
+      "name": "discovery_fear_ext_rsi_over_atr_low",
+      "description": "When fear_greed < 20 AND rsi_14 > 70 AND atr_pct < 1.5, price moves >1% within 24h (17/22 times, 77% win rate)",
+      "entry_conditions": [
+        "fear_greed < 20",
+        "rsi_14 > 70",
+        "atr_pct < 1.5"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "expected_win_rate": 0.7727,
+      "expected_avg_return": 3.402,
+      "sample_size": 22,
+      "confidence": "high",
+      "proposed_sl": 5.65,
+      "proposed_tp": 8.48,
+      "status": "proposed",
+      "created_at": "2026-04-17T06:06:38Z",
+      "last_updated": "2026-04-17T06:06:38Z",
+      "promoted_at": null
+    },
+    {
+      "name": "discovery_bb_wide_volume_d",
+      "description": "When bb_width > 5.0 AND volume_change < -30, price moves >1% within 24h (23/31 times, 74% win rate)",
+      "entry_conditions": [
+        "bb_width > 5.0",
+        "volume_change < -30"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "expected_win_rate": 0.7419,
+      "expected_avg_return": 3.242,
+      "sample_size": 31,
+      "confidence": "medium",
+      "proposed_sl": 1.02,
+      "proposed_tp": 6.23,
+      "status": "proposed",
+      "created_at": "2026-04-17T06:06:38Z",
+      "last_updated": "2026-04-17T06:06:38Z",
+      "promoted_at": null
+    },
+    {
+      "name": "discovery_fear_ext_bb_wide_atr_low",
+      "description": "When fear_greed < 20 AND bb_width > 5.0 AND atr_pct < 1.5, price moves >1% within 24h (20/27 times, 74% win rate)",
+      "entry_conditions": [
+        "fear_greed < 20",
+        "bb_width > 5.0",
+        "atr_pct < 1.5"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "expected_win_rate": 0.7407,
+      "expected_avg_return": 2.864,
+      "sample_size": 27,
+      "confidence": "medium",
+      "proposed_sl": 1.0,
+      "proposed_tp": 3.47,
+      "status": "proposed",
+      "created_at": "2026-04-17T06:06:38Z",
+      "last_updated": "2026-04-17T06:06:38Z",
+      "promoted_at": null
+    }
+  ],
+  "market_context": {
+    "regime": "ranging",
+    "adx": 2.7321946004101547,
+    "atr": 475.21519179585886,
+    "price": 74649.1
+  },
+  "last_updated": "2026-04-17T06:06:38Z"
+}

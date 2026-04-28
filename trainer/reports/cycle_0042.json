@@ -1,0 +1,191 @@
+{
+  "cycle": 42,
+  "timestamp": "2026-04-06T10:45:46.178370",
+  "analysis": {
+    "timestamp": "2026-04-06T10:45:46.179405",
+    "lookback_days": 14,
+    "balance": 500.8529254625675,
+    "total_trades": 2,
+    "total_pnl": 0.8529,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.5281,
+        "avg_win": 0.5281,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 91.1,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.3248,
+        "avg_win": 0.3248,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 61.5,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": false,
+  "market_context": {
+    "timestamp": "2026-04-06T10:45:48.174505",
+    "fear_greed": {
+      "current": 13,
+      "classification": "Extreme Fear",
+      "week_avg": 10.9,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.66,
+      "bb_width_pct": 5.16,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 69862.5,
+      "sma_20": 68507.2
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": {
+      "open_interest": null,
+      "long_short_ratio": null,
+      "top_trader_ratio": null,
+      "signal": "neutral",
+      "source": "binance_futures_derivatives"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [],
+  "adjustments": {
+    "applied": [],
+    "total": 0
+  },
+  "discovered_patterns": [
+    {
+      "name": "bb_squeeze_volume_spike_24h",
+      "conditions": [
+        "bb_width < 2.5",
+        "volume_change > 30"
+      ],
+      "condition_labels": [
+        "bb_squeeze",
+        "volume_spike"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 13,
+      "wins": 8,
+      "win_rate": 0.6154,
+      "avg_return_pct": 3.502,
+      "avg_loss_pct": -1.407,
+      "max_gain_pct": 8.477,
+      "max_drawdown_pct": -1.881,
+      "confidence": 0.4,
+      "description": "When bb_width < 2.5 AND volume_change > 30, price moves >1% within 24h (8/13 times, 62% win rate)"
+    },
+    {
+      "name": "oi_rising_fast_reddit_momentum_up_24h",
+      "conditions": [
+        "open_interest_change > 10",
+        "reddit_btc_momentum == rising"
+      ],
+      "condition_labels": [
+        "oi_rising_fast",
+        "reddit_momentum_up"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 12,
+      "wins": 8,
+      "win_rate": 0.6667,
+      "avg_return_pct": 3.977,
+      "avg_loss_pct": -1.256,
+      "max_gain_pct": 6.971,
+      "max_drawdown_pct": -1.709,
+      "confidence": 0.4,
+      "description": "When open_interest_change > 10 AND reddit_btc_momentum == rising, price moves >1% within 24h (8/12 times, 67% win rate)"
+    },
+    {
+      "name": "bb_squeeze_oi_rising_fast_24h",
+      "conditions": [
+        "bb_width < 2.5",
+        "open_interest_change > 10"
+      ],
+      "condition_labels": [
+        "bb_squeeze",
+        "oi_rising_fast"
+      ],
+      "horizon": "24h",
+      "target_field": "price_change_24h",
+      "occurrences": 11,
+      "wins": 7,
+      "win_rate": 0.6364,
+      "avg_return_pct": 4.305,
+      "avg_loss_pct": -3.146,
+      "max_gain_pct": 8.477,
+      "max_drawdown_pct": -5.287,
+      "confidence": 0.35,
+      "description": "When bb_width < 2.5 AND open_interest_change > 10, price moves >1% within 24h (7/11 times, 64% win rate)"
+    }
+  ],
+  "discovery_summary": {
+    "signal_history_entries": 207,
+    "oldest_entry": "2026-04-05T14:35:38Z",
+    "newest_entry": "2026-04-06T10:45:51Z",
+    "total_proposals": 0,
+    "proposals_by_status": {
+      "proposed": 0,
+      "testing": 0,
+      "active": 0,
+      "retired": 0
+    },
+    "high_confidence_proposals": []
+  }
+}

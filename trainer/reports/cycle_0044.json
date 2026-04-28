@@ -1,0 +1,110 @@
+{
+  "cycle": 44,
+  "timestamp": "2026-04-06T12:48:28.606260",
+  "analysis": {
+    "timestamp": "2026-04-06T12:48:28.607379",
+    "lookback_days": 14,
+    "balance": 500.8529254625675,
+    "total_trades": 2,
+    "total_pnl": 0.8529,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.5281,
+        "avg_win": 0.5281,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 91.1,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.3248,
+        "avg_win": 0.3248,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 61.5,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": false,
+  "market_context": {
+    "timestamp": "2026-04-06T12:48:30.741627",
+    "fear_greed": {
+      "current": 13,
+      "classification": "Extreme Fear",
+      "week_avg": 10.9,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.58,
+      "bb_width_pct": 4.73,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 69516.4,
+      "sma_20": 68734.13
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": {
+      "open_interest": null,
+      "long_short_ratio": null,
+      "top_trader_ratio": null,
+      "signal": "neutral",
+      "source": "binance_futures_derivatives"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [],
+  "adjustments": {
+    "applied": [],
+    "total": 0
+  }
+}

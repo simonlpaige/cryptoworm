@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-04-08T09:21:10.219302",
+  "modules_run": 4,
+  "total_findings": 1,
+  "top_findings": [
+    {
+      "signal": "sustained_extreme_fear",
+      "days": 14,
+      "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+      "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+      "confidence": 0.7,
+      "module": "fng_patterns"
+    }
+  ],
+  "details": {
+    "fng_patterns": {
+      "source": "fear_and_greed",
+      "timestamp": "2026-04-08T09:21:09.473803",
+      "current": 17,
+      "avg_7d": 12.1,
+      "avg_30d": 13.8,
+      "extreme_fear_days_14d": 14,
+      "extreme_greed_days_14d": 0,
+      "shift_7d": 5,
+      "findings": [
+        {
+          "signal": "sustained_extreme_fear",
+          "days": 14,
+          "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+          "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+          "confidence": 0.7,
+          "module": "fng_patterns"
+        }
+      ]
+    },
+    "volatility": {
+      "source": "volatility_analysis",
+      "timestamp": "2026-04-08T09:21:09.474750",
+      "bb_width_pct": 8.47,
+      "atr_trend": "contracting",
+      "findings": []
+    },
+    "long_short_ratio": {
+      "source": "binance_long_short_ratio",
+      "timestamp": "2026-04-08T09:21:09.845548",
+      "global_ratio": null,
+      "top_trader_ratio": null,
+      "findings": []
+    },
+    "cross_market": {
+      "source": "cross_market",
+      "timestamp": "2026-04-08T09:21:10.211083",
+      "price_change_5d": 0.37,
+      "vol_change_5d": -45.26,
+      "findings": []
+    }
+  }
+}

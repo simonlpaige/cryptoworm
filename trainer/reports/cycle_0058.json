@@ -1,0 +1,136 @@
+{
+  "cycle": 58,
+  "timestamp": "2026-04-08T07:18:25.103245",
+  "analysis": {
+    "timestamp": "2026-04-08T07:18:25.104246",
+    "lookback_days": 14,
+    "balance": 500.576206195032,
+    "total_trades": 3,
+    "total_pnl": 0.5762,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.5281,
+        "avg_win": 0.5281,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 91.1,
+        "sl_hits": 0,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.0481,
+        "avg_win": 0.3248,
+        "avg_loss": -0.2767,
+        "risk_reward": 1.17,
+        "max_drawdown": 0.2767,
+        "avg_hold_hours": 49.4,
+        "sl_hits": 1,
+        "tp_hits": 1,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0.0,
+        "issues": [
+          "bad_risk_reward:1.17",
+          "excessive_drawdown",
+          "shorts_underperforming"
+        ],
+        "status": "needs_improvement"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [
+      "bad_risk_reward:1.17",
+      "excessive_drawdown",
+      "shorts_underperforming"
+    ],
+    "overall_status": "needs_improvement"
+  },
+  "simulation_used": false,
+  "market_context": {
+    "timestamp": "2026-04-08T07:18:27.098312",
+    "fear_greed": {
+      "current": 17,
+      "classification": "Extreme Fear",
+      "week_avg": 12.1,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.82,
+      "bb_width_pct": 8.83,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 71717.7,
+      "sma_20": 70106.68
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": {
+      "open_interest": null,
+      "long_short_ratio": null,
+      "top_trader_ratio": null,
+      "signal": "neutral",
+      "source": "binance_futures_derivatives"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [
+    {
+      "strategy": "ema_macd",
+      "param": "rsi_short_high",
+      "old": 59,
+      "new": 58,
+      "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 59 \u2192 58 (decrease, step=1.00)"
+    }
+  ],
+  "adjustments": {
+    "applied": [
+      {
+        "timestamp": "2026-04-08T07:18:28.181243",
+        "strategy": "ema_macd",
+        "param": "rsi_short_high",
+        "old_value": 59,
+        "new_value": 58,
+        "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 59 \u2192 58 (decrease, step=1.00)",
+        "issue": "shorts_underperforming"
+      }
+    ],
+    "total": 1
+  }
+}

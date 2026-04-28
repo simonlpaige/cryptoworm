@@ -1,0 +1,173 @@
+{
+  "cycle": 92,
+  "timestamp": "2026-04-11T01:37:12.570034",
+  "analysis": {
+    "timestamp": "2026-04-11T01:37:12.606811",
+    "lookback_days": 14,
+    "balance": 500.57,
+    "total_trades": 61,
+    "total_pnl": 3.2837,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 20,
+        "wins": 20,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.5846,
+        "avg_win": 0.0292,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 28,
+        "wins": 28,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3.3634,
+        "avg_win": 0.1201,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 13,
+        "wins": 4,
+        "losses": 9,
+        "win_rate": 30.8,
+        "total_pnl": -0.6643,
+        "avg_win": 0.037,
+        "avg_loss": -0.0902,
+        "risk_reward": 0.41,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [
+          "low_win_rate:31%",
+          "bad_risk_reward:0.41"
+        ],
+        "status": "simulated_needs_improvement",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": true,
+  "market_context": {
+    "timestamp": "2026-04-11T01:37:14.464611",
+    "fear_greed": {
+      "current": 15,
+      "classification": "Extreme Fear",
+      "week_avg": 14.0,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.6,
+      "bb_width_pct": 3.26,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 72873.9,
+      "sma_20": 72576.87
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": null,
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [
+    {
+      "strategy": "sentiment",
+      "param": "stop_loss_pct",
+      "old": 2.0,
+      "new": 1.7,
+      "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)"
+    },
+    {
+      "strategy": "ema_macd",
+      "param": "stop_loss_pct",
+      "old": 1.8,
+      "new": 1.62,
+      "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)"
+    },
+    {
+      "strategy": "rsi_divergence",
+      "param": "take_profit_pct",
+      "old": 3.0,
+      "new": 3.25,
+      "reason": "Bad R:R (0.41). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)"
+    }
+  ],
+  "adjustments": {
+    "applied": [
+      {
+        "timestamp": "2026-04-11T01:37:15.125266",
+        "strategy": "sentiment",
+        "param": "stop_loss_pct",
+        "old_value": 2.0,
+        "new_value": 1.7,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-11T01:37:15.138302",
+        "strategy": "ema_macd",
+        "param": "stop_loss_pct",
+        "old_value": 1.8,
+        "new_value": 1.62,
+        "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+        "issue": "low_volatility"
+      },
+      {
+        "timestamp": "2026-04-11T01:37:15.150027",
+        "strategy": "rsi_divergence",
+        "param": "take_profit_pct",
+        "old_value": 3.0,
+        "new_value": 3.25,
+        "reason": "Bad R:R (0.41). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+        "issue": "bad_risk_reward:0.41"
+      }
+    ],
+    "total": 3
+  }
+}

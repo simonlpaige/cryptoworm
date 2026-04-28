@@ -1,0 +1,77 @@
+{
+  "cycle": 25,
+  "timestamp": "2026-04-04T05:15:40.669074",
+  "analysis": {
+    "timestamp": "2026-04-04T05:15:40.669764",
+    "lookback_days": 14,
+    "balance": 500.0,
+    "total_trades": 0,
+    "total_pnl": 0,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "market_context": {
+    "timestamp": "2026-04-04T05:15:42.668250",
+    "fear_greed": {
+      "current": 11,
+      "classification": "Extreme Fear",
+      "week_avg": 9.7,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.17,
+      "bb_width_pct": 0.48,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 66864.9,
+      "sma_20": 66862.6
+    },
+    "wsb_sentiment": null,
+    "congress_crypto": null,
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [],
+  "adjustments": {
+    "applied": [],
+    "total": 0
+  }
+}

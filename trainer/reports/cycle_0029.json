@@ -1,0 +1,90 @@
+{
+  "cycle": 29,
+  "timestamp": "2026-04-04T09:21:02.792721",
+  "analysis": {
+    "timestamp": "2026-04-04T09:21:02.793770",
+    "lookback_days": 14,
+    "balance": 500.0,
+    "total_trades": 0,
+    "total_pnl": 0,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "market_context": {
+    "timestamp": "2026-04-04T09:21:04.792991",
+    "fear_greed": {
+      "current": 11,
+      "classification": "Extreme Fear",
+      "week_avg": 9.7,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.13,
+      "bb_width_pct": 0.41,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 66977.9,
+      "sma_20": 66898.13
+    },
+    "wsb_sentiment": null,
+    "congress_crypto": {
+      "trades": 3,
+      "buys": 1,
+      "sells": 2,
+      "buy_volume": 1001.0,
+      "sell_volume": 2002.0,
+      "signal": "congress_bearish_crypto",
+      "notable_traders": [
+        "Tim Moore",
+        "Gilbert Cisneros"
+      ],
+      "source": "quiverquant.com/congresstrading"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend",
+      "congress_bearish_crypto"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [],
+  "adjustments": {
+    "applied": [],
+    "total": 0
+  }
+}

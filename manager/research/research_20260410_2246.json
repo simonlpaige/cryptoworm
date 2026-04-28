@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-04-10T22:46:01.007886",
+  "modules_run": 4,
+  "total_findings": 2,
+  "top_findings": [
+    {
+      "signal": "sustained_extreme_fear",
+      "days": 14,
+      "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+      "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+      "confidence": 0.7,
+      "module": "fng_patterns"
+    },
+    {
+      "signal": "atr_contracting",
+      "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+      "action": "Tighten stops, increase Bollinger/grid weighting",
+      "confidence": 0.6,
+      "module": "volatility"
+    }
+  ],
+  "details": {
+    "fng_patterns": {
+      "source": "fear_and_greed",
+      "timestamp": "2026-04-10T22:45:59.669458",
+      "current": 16,
+      "avg_7d": 13.4,
+      "avg_30d": 13.9,
+      "extreme_fear_days_14d": 14,
+      "extreme_greed_days_14d": 0,
+      "shift_7d": 5,
+      "findings": [
+        {
+          "signal": "sustained_extreme_fear",
+          "days": 14,
+          "implication": "Strong mean reversion buy signal \u2014 historically BTC rebounds after 7+ days of extreme fear",
+          "action": "Consider lowering fear_threshold to catch the rebound entry, or widening take_profit",
+          "confidence": 0.7,
+          "module": "fng_patterns"
+        }
+      ]
+    },
+    "volatility": {
+      "source": "volatility_analysis",
+      "timestamp": "2026-04-10T22:45:59.677533",
+      "bb_width_pct": 3.33,
+      "atr_trend": "contracting",
+      "findings": [
+        {
+          "signal": "atr_contracting",
+          "implication": "Volatility contracting \u2014 mean reversion strategies favored",
+          "action": "Tighten stops, increase Bollinger/grid weighting",
+          "confidence": 0.6,
+          "module": "volatility"
+        }
+      ]
+    },
+    "long_short_ratio": {
+      "source": "binance_long_short_ratio",
+      "timestamp": "2026-04-10T22:46:00.329918",
+      "global_ratio": null,
+      "top_trader_ratio": null,
+      "findings": []
+    },
+    "cross_market": {
+      "source": "cross_market",
+      "timestamp": "2026-04-10T22:46:00.981396",
+      "price_change_5d": 0.56,
+      "vol_change_5d": -45.95,
+      "findings": []
+    }
+  }
+}

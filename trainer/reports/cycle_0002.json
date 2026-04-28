@@ -1,0 +1,102 @@
+{
+  "cycle": 2,
+  "timestamp": "2026-04-03T04:01:00.198365",
+  "analysis": {
+    "timestamp": "2026-04-03T04:01:00.198897",
+    "lookback_days": 14,
+    "balance": 500.0,
+    "total_trades": 0,
+    "total_pnl": 0,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "market_context": {
+    "timestamp": "2026-04-03T04:01:02.199979",
+    "fear_greed": {
+      "current": 9,
+      "classification": "Extreme Fear",
+      "week_avg": 9.9,
+      "trend": "falling"
+    },
+    "volatility": {
+      "atr_pct": 0.48,
+      "bb_width_pct": 1.72,
+      "regime": "low",
+      "trend": "bearish",
+      "current_price": 66580.5,
+      "sma_20": 66677.53
+    },
+    "wsb_sentiment": {
+      "crypto_mentions": 26,
+      "crypto_sentiment": -0.034,
+      "crypto_tickers_found": [
+        "COIN",
+        "MSTR",
+        "MARA",
+        "RIOT"
+      ],
+      "overall_wsb_sentiment": 0.0112,
+      "wsb_mood": "neutral",
+      "source": "quiverquant.com/wallstreetbets"
+    },
+    "congress_crypto": {
+      "trades": 3,
+      "buys": 1,
+      "sells": 2,
+      "buy_volume": 1001.0,
+      "sell_volume": 2002.0,
+      "signal": "congress_bearish_crypto",
+      "notable_traders": [
+        "Tim Moore",
+        "Gilbert Cisneros"
+      ],
+      "source": "quiverquant.com/congresstrading"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bearish_trend",
+      "congress_bearish_crypto"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [],
+  "adjustments": {
+    "applied": [],
+    "total": 0
+  }
+}

@@ -1,0 +1,6 @@
+krakenex==2.1.0
+pykrakenapi==0.3.2
+requests>=2.28.0
+schedule>=1.2.0
+xgboost>=3.0.0
+scikit-learn>=1.5.0

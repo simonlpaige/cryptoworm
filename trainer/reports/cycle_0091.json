@@ -1,0 +1,129 @@
+{
+  "cycle": 91,
+  "timestamp": "2026-04-10T23:48:07.100416",
+  "analysis": {
+    "timestamp": "2026-04-10T23:48:07.100987",
+    "lookback_days": 14,
+    "balance": 500.0,
+    "total_trades": 61,
+    "total_pnl": 3.197,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 20,
+        "wins": 20,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.6033,
+        "avg_win": 0.0302,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 28,
+        "wins": 28,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3.3634,
+        "avg_win": 0.1201,
+        "avg_loss": 0,
+        "risk_reward": 99.0,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [],
+        "status": "simulated",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 13,
+        "wins": 4,
+        "losses": 9,
+        "win_rate": 30.8,
+        "total_pnl": -0.7697,
+        "avg_win": 0.036,
+        "avg_loss": -0.1015,
+        "risk_reward": 0.35,
+        "max_drawdown": 0.0,
+        "avg_hold_hours": 0.1,
+        "sl_hits": 0,
+        "tp_hits": 0,
+        "long_win_rate": 0.0,
+        "short_win_rate": 0.0,
+        "issues": [
+          "low_win_rate:31%",
+          "bad_risk_reward:0.35"
+        ],
+        "status": "simulated_needs_improvement",
+        "note": "Synthetic backtest \u2014 no real trades closed yet"
+      }
+    },
+    "all_issues": [],
+    "overall_status": "healthy"
+  },
+  "simulation_used": true,
+  "market_context": {
+    "timestamp": "2026-04-10T23:48:09.105684",
+    "fear_greed": {
+      "current": 16,
+      "classification": "Extreme Fear",
+      "week_avg": 13.4,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.61,
+      "bb_width_pct": 3.3,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 72971.5,
+      "sma_20": 72502.01
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": {
+      "open_interest": null,
+      "long_short_ratio": null,
+      "top_trader_ratio": null,
+      "signal": "neutral",
+      "source": "binance_futures_derivatives"
+    },
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": true,
+  "adjustments": {
+    "applied": [],
+    "total": 0,
+    "reason": "reverted"
+  }
+}

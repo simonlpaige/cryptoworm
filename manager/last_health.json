@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-04-17T08:08:29.459267",
+  "overall": "warning",
+  "checks": {
+    "bot_alive": {
+      "check": "bot_alive",
+      "status": "healthy",
+      "last_log_age_seconds": 0.0
+    },
+    "kraken_api": {
+      "check": "kraken_api",
+      "status": "healthy",
+      "server_time": "Fri, 17 Apr 26 08:08:29 +0000"
+    },
+    "positions": {
+      "check": "positions",
+      "status": "healthy",
+      "open": 2,
+      "alerts": [],
+      "balance": 501.28,
+      "peak_balance": 501.9,
+      "drawdown_pct": 0.12
+    },
+    "strategies": {
+      "check": "strategies",
+      "status": "healthy",
+      "details": {
+        "grid": {
+          "total_trades": 4,
+          "last_trade": "2026-04-15T04:01:25.063195"
+        },
+        "sentiment": {
+          "total_trades": 1,
+          "last_trade": "2026-04-10T04:17:02.817922"
+        },
+        "ema_macd": {
+          "total_trades": 0,
+          "last_trade": null
+        },
+        "bollinger": {
+          "total_trades": 0,
+          "last_trade": null
+        },
+        "rsi_divergence": {
+          "total_trades": 1,
+          "last_trade": "2026-04-11T00:39:40.187077"
+        }
+      }
+    },
+    "training_engine": {
+      "check": "training_engine",
+      "status": "warning",
+      "cycles_completed": 146,
+      "total_adjustments": 118,
+      "revert_count": 5,
+      "last_cycle_hours_ago": 0.0,
+      "detail": "Training engine has reverted 5 times \u2014 parameters may be unstable"
+    },
+    "log_size": {
+      "check": "log_size",
+      "status": "healthy"
+    },
+    "zombies": {
+      "check": "zombies",
+      "status": "warning",
+      "count": 0,
+      "detail": "No bot.py process found \u2014 bot may be dead"
+    }
+  }
+}

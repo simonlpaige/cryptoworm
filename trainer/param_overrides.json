@@ -1,0 +1,13 @@
+{
+  "sentiment": {
+    "stop_loss_pct": 1.0
+  },
+  "ema_macd": {
+    "stop_loss_pct": 1.2
+  },
+  "rsi_divergence": {
+    "_frozen": true,
+    "stop_loss_pct": 3.3,
+    "take_profit_pct": 5.0
+  }
+}

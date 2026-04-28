@@ -1,0 +1,130 @@
+{
+  "cycle": 128,
+  "timestamp": "2026-04-16T04:38:21.453630",
+  "analysis": {
+    "timestamp": "2026-04-16T04:38:21.464124",
+    "lookback_days": 14,
+    "balance": 500.8915331729212,
+    "total_trades": 3,
+    "total_pnl": 0.3216,
+    "strategies": {
+      "grid": {
+        "strategy": "grid",
+        "trade_count": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 1.3328,
+        "avg_win": 0.6664,
+        "avg_loss": 0,
+        "risk_reward": Infinity,
+        "max_drawdown": 0,
+        "avg_hold_hours": 109.4,
+        "sl_hits": 0,
+        "tp_hits": 2,
+        "long_win_rate": 100.0,
+        "short_win_rate": 0,
+        "issues": [],
+        "status": "healthy"
+      },
+      "sentiment": {
+        "strategy": "sentiment",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "ema_macd": {
+        "strategy": "ema_macd",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "bollinger": {
+        "strategy": "bollinger",
+        "trade_count": 0,
+        "status": "no_data",
+        "diagnosis": "Not enough trades to evaluate"
+      },
+      "rsi_divergence": {
+        "strategy": "rsi_divergence",
+        "trade_count": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -1.0112,
+        "avg_win": 0,
+        "avg_loss": -1.0112,
+        "risk_reward": 0.0,
+        "max_drawdown": 1.0112,
+        "avg_hold_hours": 99.4,
+        "sl_hits": 1,
+        "tp_hits": 0,
+        "long_win_rate": 0,
+        "short_win_rate": 0.0,
+        "issues": [
+          "low_win_rate:0%",
+          "bad_risk_reward:0.00",
+          "stops_too_tight"
+        ],
+        "status": "needs_improvement"
+      }
+    },
+    "all_issues": [
+      "low_win_rate:0%",
+      "bad_risk_reward:0.00",
+      "stops_too_tight"
+    ],
+    "overall_status": "needs_improvement"
+  },
+  "backtest_used": false,
+  "market_context": {
+    "timestamp": "2026-04-16T04:38:23.546567",
+    "fear_greed": {
+      "current": 23,
+      "classification": "Extreme Fear",
+      "week_avg": 18.0,
+      "trend": "rising"
+    },
+    "volatility": {
+      "atr_pct": 0.59,
+      "bb_width_pct": 2.22,
+      "regime": "low",
+      "trend": "bullish",
+      "current_price": 75019.9,
+      "sma_20": 74484.69
+    },
+    "funding_rate": null,
+    "derivatives_sentiment": null,
+    "recommendations": [
+      "extreme_fear_bias_long",
+      "tighten_stops",
+      "prefer_mean_reversion",
+      "increase_grid_density",
+      "bullish_trend"
+    ]
+  },
+  "reverted": false,
+  "proposed_adjustments": [
+    {
+      "strategy": "rsi_divergence",
+      "param": "stop_loss_pct",
+      "old": 3.5,
+      "new": 3.3,
+      "reason": "Low volatility regime (ATR=0.59%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)"
+    }
+  ],
+  "adjustments": {
+    "applied": [
+      {
+        "timestamp": "2026-04-16T04:38:24.632774",
+        "strategy": "rsi_divergence",
+        "param": "stop_loss_pct",
+        "old_value": 3.5,
+        "new_value": 3.3,
+        "reason": "Low volatility regime (ATR=0.59%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+        "issue": "low_volatility"
+      }
+    ],
+    "total": 1
+  }
+}

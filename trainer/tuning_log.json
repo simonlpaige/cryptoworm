@@ -1,0 +1,1352 @@
+[
+  {
+    "timestamp": "2026-04-05T15:20:34.770607",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-05T15:20:34.771365",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-05T15:20:34.789838",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.8,
+    "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 2.0 \u2192 1.8 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T04:37:42.408296",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T04:37:42.412944",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T04:37:42.417670",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.6,
+    "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T05:39:02.116543",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.4,
+    "new_value": 1.1,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T05:39:02.121992",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.44,
+    "new_value": 1.26,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T05:39:02.126531",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 1.6,
+    "new_value": 1.5,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.6 \u2192 1.5 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T06:40:21.490968",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.1,
+    "new_value": 1.0,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-06T06:40:21.496118",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.26,
+    "new_value": 1.2,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-08T04:13:48.773105",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 3.2,
+    "new_value": 3.5,
+    "reason": "Bad R:R (1.17). take_profit_pct: 3.2 \u2192 3.5 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T04:14:27.521535",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 3.5,
+    "new_value": 3.8,
+    "reason": "Bad R:R (1.17). take_profit_pct: 3.5 \u2192 3.8 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T05:15:04.022952",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 3.8,
+    "new_value": 4.1,
+    "reason": "Bad R:R (1.17). take_profit_pct: 3.8 \u2192 4.1 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T05:15:48.715824",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 4.1,
+    "new_value": 4.4,
+    "reason": "Bad R:R (1.17). take_profit_pct: 4.1 \u2192 4.4 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T06:16:25.395397",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 4.4,
+    "new_value": 4.7,
+    "reason": "Bad R:R (1.17). take_profit_pct: 4.4 \u2192 4.7 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T06:17:08.133015",
+    "strategy": "ema_macd",
+    "param": "take_profit_pct",
+    "old_value": 4.7,
+    "new_value": 5.0,
+    "reason": "Bad R:R (1.17). take_profit_pct: 4.7 \u2192 5.0 (increase, step=0.30)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-08T07:17:45.804842",
+    "strategy": "ema_macd",
+    "param": "rsi_short_high",
+    "old_value": 60,
+    "new_value": 59,
+    "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 60 \u2192 59 (decrease, step=1.00)",
+    "issue": "shorts_underperforming"
+  },
+  {
+    "timestamp": "2026-04-08T07:18:28.181243",
+    "strategy": "ema_macd",
+    "param": "rsi_short_high",
+    "old_value": 59,
+    "new_value": 58,
+    "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 59 \u2192 58 (decrease, step=1.00)",
+    "issue": "shorts_underperforming"
+  },
+  {
+    "timestamp": "2026-04-08T08:19:07.159931",
+    "strategy": "ema_macd",
+    "param": "rsi_short_high",
+    "old_value": 58,
+    "new_value": 57,
+    "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 58 \u2192 57 (decrease, step=1.00)",
+    "issue": "shorts_underperforming"
+  },
+  {
+    "timestamp": "2026-04-08T08:19:49.243426",
+    "strategy": "ema_macd",
+    "param": "rsi_short_high",
+    "old_value": 57,
+    "new_value": 56,
+    "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 57 \u2192 56 (decrease, step=1.00)",
+    "issue": "shorts_underperforming"
+  },
+  {
+    "timestamp": "2026-04-08T09:20:26.651134",
+    "strategy": "ema_macd",
+    "param": "rsi_short_high",
+    "old_value": 56,
+    "new_value": 55,
+    "reason": "Shorts underperforming (win rate 0.0%). rsi_short_high: 56 \u2192 55 (decrease, step=1.00)",
+    "issue": "shorts_underperforming"
+  },
+  {
+    "timestamp": "2026-04-10T05:14:01.967834",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (0.87). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.87"
+  },
+  {
+    "timestamp": "2026-04-10T06:15:53.452305",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (1.00). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:1.00"
+  },
+  {
+    "timestamp": "2026-04-10T07:17:35.819908",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.5,
+    "new_value": 3.75,
+    "reason": "Bad R:R (1.05). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:1.05"
+  },
+  {
+    "timestamp": "2026-04-10T09:21:22.255238",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T09:21:22.267040",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T09:21:22.277311",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (1.16). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:1.16"
+  },
+  {
+    "timestamp": "2026-04-10T10:22:58.771166",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T10:22:58.782394",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T10:22:58.791882",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (0.73). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.73"
+  },
+  {
+    "timestamp": "2026-04-10T12:26:27.703807",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T12:26:27.715124",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T12:26:27.725108",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (0.73). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.73"
+  },
+  {
+    "timestamp": "2026-04-10T13:28:19.161437",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.47%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T13:28:19.174159",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.47%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T13:28:19.184658",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (0.77). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.77"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:54.506609",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.4,
+    "new_value": 1.1,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:54.520792",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.44,
+    "new_value": 1.26,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T14:29:54.530541",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.5,
+    "new_value": 3.75,
+    "reason": "Bad R:R (0.72). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.72"
+  },
+  {
+    "timestamp": "2026-04-10T15:32:02.973628",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.1,
+    "new_value": 1.0,
+    "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T15:32:02.990645",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.26,
+    "new_value": 1.2,
+    "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T15:32:03.008415",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.75,
+    "new_value": 4.0,
+    "reason": "Bad R:R (0.46). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.46"
+  },
+  {
+    "timestamp": "2026-04-10T16:33:48.298124",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.0,
+    "new_value": 4.25,
+    "reason": "Bad R:R (0.38). take_profit_pct: 4.0 \u2192 4.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.38"
+  },
+  {
+    "timestamp": "2026-04-10T17:36:01.361144",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.25,
+    "new_value": 4.5,
+    "reason": "Bad R:R (0.30). take_profit_pct: 4.25 \u2192 4.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.30"
+  },
+  {
+    "timestamp": "2026-04-10T18:38:04.335210",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.5,
+    "new_value": 4.75,
+    "reason": "Bad R:R (0.35). take_profit_pct: 4.5 \u2192 4.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.35"
+  },
+  {
+    "timestamp": "2026-04-10T19:40:20.002510",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.75,
+    "new_value": 5.0,
+    "reason": "Bad R:R (0.32). take_profit_pct: 4.75 \u2192 5.0 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.32"
+  },
+  {
+    "timestamp": "2026-04-10T20:42:25.527299",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.8,
+    "reason": "Low volatility regime (ATR=0.61%). stop_loss_pct: 2.0 \u2192 1.8 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T21:44:25.241319",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.6,
+    "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.6 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-10T22:45:58.273047",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 1.6,
+    "new_value": 1.5,
+    "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 1.6 \u2192 1.5 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T01:37:15.125266",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T01:37:15.138302",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T01:37:15.150027",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (0.41). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.41"
+  },
+  {
+    "timestamp": "2026-04-11T02:38:56.999587",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T02:38:57.010580",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T02:38:57.021756",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (0.37). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.37"
+  },
+  {
+    "timestamp": "2026-04-11T03:40:51.629089",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.4,
+    "new_value": 1.1,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T03:40:51.640960",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.44,
+    "new_value": 1.26,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T03:40:51.651630",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.5,
+    "new_value": 3.75,
+    "reason": "Bad R:R (0.31). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.31"
+  },
+  {
+    "timestamp": "2026-04-11T04:42:30.456158",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.1,
+    "new_value": 1.0,
+    "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T04:42:30.466931",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.26,
+    "new_value": 1.2,
+    "reason": "Low volatility regime (ATR=0.49%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T04:42:30.477055",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.75,
+    "new_value": 4.0,
+    "reason": "Bad R:R (0.29). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.29"
+  },
+  {
+    "timestamp": "2026-04-11T06:45:54.242860",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.37%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T06:45:54.257168",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.37%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T06:45:54.269538",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (0.44). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.44"
+  },
+  {
+    "timestamp": "2026-04-11T07:48:19.916246",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.35%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T07:48:19.928712",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.35%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T07:48:19.939280",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (0.44). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.44"
+  },
+  {
+    "timestamp": "2026-04-11T09:51:53.367243",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.7,
+    "reason": "Low volatility regime (ATR=0.34%). stop_loss_pct: 2.0 \u2192 1.7 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T09:51:53.380950",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 1.62,
+    "reason": "Low volatility regime (ATR=0.34%). stop_loss_pct: 1.8 \u2192 1.62 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T09:51:53.393165",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.0,
+    "new_value": 3.25,
+    "reason": "Bad R:R (0.39). take_profit_pct: 3.0 \u2192 3.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.39"
+  },
+  {
+    "timestamp": "2026-04-11T10:53:38.632159",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.7,
+    "new_value": 1.4,
+    "reason": "Low volatility regime (ATR=0.31%). stop_loss_pct: 1.7 \u2192 1.4 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T10:53:38.645190",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.62,
+    "new_value": 1.44,
+    "reason": "Low volatility regime (ATR=0.31%). stop_loss_pct: 1.62 \u2192 1.44 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T10:53:38.657910",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.25,
+    "new_value": 3.5,
+    "reason": "Bad R:R (0.39). take_profit_pct: 3.25 \u2192 3.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.39"
+  },
+  {
+    "timestamp": "2026-04-11T11:55:45.773517",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.4,
+    "new_value": 1.1,
+    "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.4 \u2192 1.1 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T11:55:45.784869",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.44,
+    "new_value": 1.26,
+    "reason": "Low volatility regime (ATR=0.28%). stop_loss_pct: 1.44 \u2192 1.26 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T11:55:45.795726",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.5,
+    "new_value": 3.75,
+    "reason": "Bad R:R (0.62). take_profit_pct: 3.5 \u2192 3.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.62"
+  },
+  {
+    "timestamp": "2026-04-11T12:57:34.768841",
+    "strategy": "sentiment",
+    "param": "stop_loss_pct",
+    "old_value": 1.1,
+    "new_value": 1.0,
+    "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 1.1 \u2192 1.0 (decrease, step=0.30)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T12:57:34.789313",
+    "strategy": "ema_macd",
+    "param": "stop_loss_pct",
+    "old_value": 1.26,
+    "new_value": 1.2,
+    "reason": "Low volatility regime (ATR=0.25%). stop_loss_pct: 1.26 \u2192 1.2 (decrease, step=0.18)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T12:57:34.797938",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 3.75,
+    "new_value": 4.0,
+    "reason": "Bad R:R (1.17). take_profit_pct: 3.75 \u2192 4.0 (increase, step=0.25)",
+    "issue": "bad_risk_reward:1.17"
+  },
+  {
+    "timestamp": "2026-04-11T13:59:24.324245",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.0,
+    "new_value": 1.8,
+    "reason": "Low volatility regime (ATR=0.27%). stop_loss_pct: 2.0 \u2192 1.8 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-11T15:01:19.210962",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.0,
+    "new_value": 4.25,
+    "reason": "Bad R:R (0.96). take_profit_pct: 4.0 \u2192 4.25 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.96"
+  },
+  {
+    "timestamp": "2026-04-11T16:03:44.792698",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.25,
+    "new_value": 4.5,
+    "reason": "Bad R:R (0.89). take_profit_pct: 4.25 \u2192 4.5 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.89"
+  },
+  {
+    "timestamp": "2026-04-15T05:47:57.798451",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.5,
+    "new_value": 4.75,
+    "reason": "Bad R:R (0.00). take_profit_pct: 4.5 \u2192 4.75 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.00"
+  },
+  {
+    "timestamp": "2026-04-15T06:48:30.378120",
+    "strategy": "rsi_divergence",
+    "param": "take_profit_pct",
+    "old_value": 4.75,
+    "new_value": 5.0,
+    "reason": "Bad R:R (0.00). take_profit_pct: 4.75 \u2192 5.0 (increase, step=0.25)",
+    "issue": "bad_risk_reward:0.00"
+  },
+  {
+    "timestamp": "2026-04-15T07:49:03.888237",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 1.8,
+    "new_value": 2.1,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 1.8 \u2192 2.1 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T08:49:37.877812",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.1,
+    "new_value": 2.4,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.1 \u2192 2.4 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T09:50:11.009437",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.4,
+    "new_value": 2.7,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.4 \u2192 2.7 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T10:50:44.021073",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 2.7,
+    "new_value": 3.0,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 2.7 \u2192 3.0 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T11:51:18.690603",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.0,
+    "new_value": 3.3,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.0 \u2192 3.3 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T12:51:51.368197",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T13:28:01.269700",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T13:52:24.483789",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T14:28:57.218263",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.53%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T14:52:59.108652",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T15:29:54.249893",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T15:53:29.734111",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T16:30:49.505376",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.56%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T16:54:00.629003",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T17:31:45.136001",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.57%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T17:54:34.668414",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T18:32:41.499854",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T18:55:06.464834",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T19:33:38.205469",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.58%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T19:56:37.472561",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T20:34:59.657286",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.65%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T20:58:04.881407",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T21:36:22.202931",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.64%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T21:59:23.710318",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T22:38:11.544562",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.63%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-15T23:00:27.892605",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-15T23:39:36.576960",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T00:01:28.328968",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T01:34:02.756209",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T01:55:51.599289",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T02:35:33.987616",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T02:56:50.040619",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T03:36:58.618567",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.64%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T03:57:48.606326",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T04:38:24.632774",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.59%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T04:58:55.226949",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T05:39:53.254908",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.57%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T05:59:54.129880",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T06:41:13.878247",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.54%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T07:00:53.705852",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T07:42:36.054116",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.55%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T08:02:03.187560",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T08:43:49.816179",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.56%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T09:02:33.979038",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T09:44:44.669769",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.5%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T10:03:05.667175",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T10:45:39.322786",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T11:03:36.867925",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T11:46:40.259696",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.48%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T12:04:11.737554",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T12:47:43.596792",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.44%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T13:04:47.554087",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T13:49:19.273434",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.46%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T14:06:09.381478",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T14:50:44.729963",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.6%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T15:07:07.183726",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T15:52:02.816455",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.66%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-16T16:07:40.661818",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-16T16:52:59.999198",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.68%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-17T03:03:53.844315",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-17T04:04:48.213365",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.62%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-17T05:05:42.531300",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-17T06:06:38.003067",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.51%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  },
+  {
+    "timestamp": "2026-04-17T07:07:33.563069",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.3,
+    "new_value": 3.5,
+    "reason": "Stops too tight (1 SL hits). stop_loss_pct: 3.3 \u2192 3.5 (increase, step=0.30)",
+    "issue": "stops_too_tight"
+  },
+  {
+    "timestamp": "2026-04-17T08:08:29.003280",
+    "strategy": "rsi_divergence",
+    "param": "stop_loss_pct",
+    "old_value": 3.5,
+    "new_value": 3.3,
+    "reason": "Low volatility regime (ATR=0.41%). stop_loss_pct: 3.5 \u2192 3.3 (decrease, step=0.20)",
+    "issue": "low_volatility"
+  }
+]
